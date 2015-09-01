@@ -1,0 +1,271 @@
+                           ___                __    _                          
+         +  /-            /   |  ____  __  __/ /_  (_)____       -\  +         
+        /s  h-           / /| | / __ \/ / / / __ \/ / ___/       -h  s\        
+        oh-:d/          / ___ |/ / / / /_/ / /_/ / (__  )        /d:-ho        
+        shh+hy-        /_/  |_/_/ /_/\__,_/_.___/_/____/        -yh+hhs        
+      -:+hhdhyys/-                                           -\syyhdhh+:-      
+    -//////dhhhhhddhhyss-       Analysis Report       -ssyhhddhhhhhd\\\\\\-    
+   /++/////oydddddhhyys/     ooooooooooooooooooooo     \syyhhdddddyo\\\\\++\   
+ -+++///////odh/-                                             -+hdo\\\\\\\+++- 
+ +++++++++//yy+/:                                             :\+yy\\+++++++++ 
+/+soss+sys//yyo/os++o+:                                 :+o++so\oyy\\sys+ssos+\
++oyyyys++o/+yss/+/oyyyy:                               :yyyyo\+\ssy+\o++syyyyo+
++oyyyyyyso+os/o/+yyyyyy/                               \yyyyyy+\o\so+osyyyyyyo+
+
+
+[#############################################################################]
+    Analysis Report for portbind.exe
+                   MD5: 5a1c10ee87fc3085865d07415240e090
+[#############################################################################]
+
+Summary: 
+    - Performs File Modification and Destruction:
+        The executable modifies and destructs files which are not temporary.
+
+    - Performs Registry Activities:
+        The executable reads and modifies registry values. It also creates and
+        monitors registry keys.
+
+[=============================================================================]
+    Table of Contents
+[=============================================================================]
+
+- General information
+- portbind.e.exe
+  a) Registry Activities
+  b) File Activities
+  c) Network Activities
+
+
+[#############################################################################]
+    1. General Information
+[#############################################################################]
+[=============================================================================]
+    Information about Anubis' invocation
+[=============================================================================]
+        Time needed:        240 s
+        Report created:     08/21/10, 10:11:49 UTC
+        Termination reason: Timeout
+        Program version:    1.74.3110
+
+
+[#############################################################################]
+    2. portbind.e.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: Primary Analysis Subject
+        Filename:        portbind.e.exe
+        MD5:             5a1c10ee87fc3085865d07415240e090
+        SHA-1:           13d026fdc3aaf949c43900b7ab65465a559aa08b
+        File Size:       13931 Bytes
+        Command Line:    "C:\portbind.e.exe" 
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+
+[=============================================================================]
+    Run-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\hnetcfg.dll ],
+               Base Address: [0x662B0000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\mswsock.dll ],
+               Base Address: [0x71A50000 ], Size: [0x0003F000 ]
+        Module Name: [ C:\WINDOWS\System32\wshtcpip.dll ],
+               Base Address: [0x71A90000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\ws2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+
+[=============================================================================]
+    2.a) portbind.e.exe - Registry Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Registry Values Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Key: [ HKLM\SYSTEM\CurrentControlSet\Services\Winsock\Parameters ], 
+             Value Name: [ Transports ], Value: [ 0x5400630070006900700000004e0065007400420049004f00530000000000 ], 2 times
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers ], 
+             Value Name: [ TransparentEnabled ], Value: [ 1 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Control\ComputerName\ActiveComputerName ], 
+             Value Name: [ ComputerName ], Value: [ PC ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Control\Terminal Server ], 
+             Value Name: [ TSUserEnabled ], Value: [ 0 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\Winsock ], 
+             Value Name: [ HelperDllName ], Value: [ %SystemRoot%\System32\wshtcpip.dll ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\Winsock ], 
+             Value Name: [ Mapping ], Value: [ 0x0b0000000300000002000000010000000600000002000000010000000000 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\Winsock ], 
+             Value Name: [ MaxSockaddrLength ], Value: [ 16 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\Winsock ], 
+             Value Name: [ MinSockaddrLength ], Value: [ 16 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\Winsock ], 
+             Value Name: [ UseDelayedAcceptance ], Value: [ 0 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters ], 
+             Value Name: [ WinSock_Registry_Version ], Value: [ 2.0 ], 2 times
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5 ], 
+             Value Name: [ Num_Catalog_Entries ], Value: [ 3 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5 ], 
+             Value Name: [ Serial_Access_Num ], Value: [ 4 ], 2 times
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000001 ], 
+             Value Name: [ DisplayString ], Value: [ Tcpip ], 4 times
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000001 ], 
+             Value Name: [ Enabled ], Value: [ 1 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000001 ], 
+             Value Name: [ LibraryPath ], Value: [ %SystemRoot%\System32\mswsock.dll ], 2 times
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000001 ], 
+             Value Name: [ ProviderId ], Value: [ 0x409d05229e7ecf11ae5a00aa00a7112b ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000001 ], 
+             Value Name: [ StoresServiceClassInfo ], Value: [ 0 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000001 ], 
+             Value Name: [ SupportedNameSpace ], Value: [ 12 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000001 ], 
+             Value Name: [ Version ], Value: [ 0 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000002 ], 
+             Value Name: [ DisplayString ], Value: [ NTDS ], 4 times
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000002 ], 
+             Value Name: [ Enabled ], Value: [ 1 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000002 ], 
+             Value Name: [ LibraryPath ], Value: [ %SystemRoot%\System32\winrnr.dll ], 2 times
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000002 ], 
+             Value Name: [ ProviderId ], Value: [ 0xee37263b80e5cf11a55500c04fd8d4ac ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000002 ], 
+             Value Name: [ StoresServiceClassInfo ], Value: [ 0 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000002 ], 
+             Value Name: [ SupportedNameSpace ], Value: [ 32 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000002 ], 
+             Value Name: [ Version ], Value: [ 0 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000003 ], 
+             Value Name: [ DisplayString ], Value: [ Network Location Awareness (NLA) Namespace ], 4 times
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000003 ], 
+             Value Name: [ Enabled ], Value: [ 1 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000003 ], 
+             Value Name: [ LibraryPath ], Value: [ %SystemRoot%\System32\mswsock.dll ], 2 times
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000003 ], 
+             Value Name: [ ProviderId ], Value: [ 0x3a244266a83ba64abaa52e0bd71fdd83 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000003 ], 
+             Value Name: [ StoresServiceClassInfo ], Value: [ 0 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000003 ], 
+             Value Name: [ SupportedNameSpace ], Value: [ 15 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5\Catalog_Entries\000000000003 ], 
+             Value Name: [ Version ], Value: [ 0 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9 ], 
+             Value Name: [ Next_Catalog_Entry_ID ], Value: [ 1012 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9 ], 
+             Value Name: [ Num_Catalog_Entries ], Value: [ 11 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9 ], 
+             Value Name: [ Serial_Access_Num ], Value: [ 4 ], 2 times
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\000000000001 ], 
+             Value Name: [ PackedCatalogItem ], Value: [ %SystemRoot%\system32\mswsock. ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\000000000002 ], 
+             Value Name: [ PackedCatalogItem ], Value: [ %SystemRoot%\system32\mswsock. ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\000000000003 ], 
+             Value Name: [ PackedCatalogItem ], Value: [ %SystemRoot%\system32\mswsock. ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\000000000004 ], 
+             Value Name: [ PackedCatalogItem ], Value: [ %SystemRoot%\system32\rsvpsp.d ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\000000000005 ], 
+             Value Name: [ PackedCatalogItem ], Value: [ %SystemRoot%\system32\rsvpsp.d ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\000000000006 ], 
+             Value Name: [ PackedCatalogItem ], Value: [ %SystemRoot%\system32\mswsock. ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\000000000007 ], 
+             Value Name: [ PackedCatalogItem ], Value: [ %SystemRoot%\system32\mswsock. ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\000000000008 ], 
+             Value Name: [ PackedCatalogItem ], Value: [ %SystemRoot%\system32\mswsock. ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\000000000009 ], 
+             Value Name: [ PackedCatalogItem ], Value: [ %SystemRoot%\system32\mswsock. ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\000000000010 ], 
+             Value Name: [ PackedCatalogItem ], Value: [ %SystemRoot%\system32\mswsock. ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9\Catalog_Entries\000000000011 ], 
+             Value Name: [ PackedCatalogItem ], Value: [ %SystemRoot%\system32\mswsock. ], 1 time
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Monitored Registry Keys:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\NameSpace_Catalog5 ], 
+             Watch subtree: [ 0 ], Notify Filter: [ Key Change ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Services\WinSock2\Parameters\Protocol_Catalog9 ], 
+             Watch subtree: [ 0 ], Notify Filter: [ Key Change ], 1 time
+
+
+[=============================================================================]
+    2.b) portbind.e.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ C:\portbind.e.exe ]
+        File Name: [ PIPE\lsarpc ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Modified:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ PIPE\lsarpc ]
+        File Name: [ \Device\Afd\Endpoint ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    File System Control Communication:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File: [ PIPE\lsarpc ], Control Code: [ 0x0011C017 ], 3 times
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Device Control Communication:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File: [ \Device\Afd\Endpoint ], Control Code: [ AFD_GET_INFO (0x0001207B) ], 2 times
+        File: [ \Device\Afd\Endpoint ], Control Code: [ AFD_SET_CONTEXT (0x00012047) ], 3 times
+        File: [ \Device\Afd\Endpoint ], Control Code: [ AFD_BIND (0x00012003) ], 1 time
+        File: [ \Device\Afd\Endpoint ], Control Code: [ AFD_GET_TDI_HANDLES (0x00012037) ], 1 time
+        File: [ \Device\Afd\Endpoint ], Control Code: [ AFD_START_LISTEN (0x0001200B) ], 1 time
+        File: [ \Device\Afd\Endpoint ], Control Code: [ AFD_GET_SOCK_NAME (0x0001202F) ], 1 time
+        File: [ \Device\KsecDD ], Control Code: [ 0x00390008 ], 8 times
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ C:\WINDOWS\System32\wshtcpip.dll ]
+        File Name: [ C:\WINDOWS\system32\WS2HELP.dll ]
+        File Name: [ C:\WINDOWS\system32\hnetcfg.dll ]
+        File Name: [ C:\WINDOWS\system32\mswsock.dll ]
+        File Name: [ C:\WINDOWS\system32\ws2_32.dll ]
+
+[=============================================================================]
+    2.c) portbind.e.exe - Network Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Opened Listening Ports:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Port: [ 4444 ], Type: [ tcp ]
+
+
+
+
+[#############################################################################]
+                       International Secure Systems Lab                        
+                            http://www.iseclab.org                             
+
+Vienna University of Technology     Eurecom France            UC Santa Barbara
+http://www.tuwien.ac.at          http://www.eurecom.fr  http://www.cs.ucsb.edu
+
+                          Contact: anubis@iseclab.org                          
+
