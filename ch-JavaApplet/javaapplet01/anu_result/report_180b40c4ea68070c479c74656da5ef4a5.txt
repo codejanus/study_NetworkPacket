@@ -1,0 +1,2604 @@
+                           ___                __    _                          
+         +  /-            /   |  ____  __  __/ /_  (_)____       -\  +         
+        /s  h-           / /| | / __ \/ / / / __ \/ / ___/       -h  s\        
+        oh-:d/          / ___ |/ / / / /_/ / /_/ / (__  )        /d:-ho        
+        shh+hy-        /_/  |_/_/ /_/\__,_/_.___/_/____/        -yh+hhs        
+      -:+hhdhyys/-                                           -\syyhdhh+:-      
+    -//////dhhhhhddhhyss-       Analysis Report       -ssyhhddhhhhhd\\\\\\-    
+   /++/////oydddddhhyys/     ooooooooooooooooooooo     \syyhhdddddyo\\\\\++\   
+ -+++///////odh/-                                             -+hdo\\\\\\\+++- 
+ +++++++++//yy+/:                                             :\+yy\\+++++++++ 
+/+soss+sys//yyo/os++o+:                                 :+o++so\oyy\\sys+ssos+\
++oyyyys++o/+yss/+/oyyyy:                               :yyyyo\+\ssy+\o++syyyyo+
++oyyyyyyso+os/o/+yyyyyy/                               \yyyyyy+\o\so+osyyyyyyo+
+
+
+[#############################################################################]
+    Analysis Report for file.exe
+                   MD5: 0f37839f48f7fc77e6d50e14657fb96e
+[#############################################################################]
+
+Summary: 
+    - Write to foreign memory areas: 
+        This executable tampers with the execution of another process.
+
+    - AV Hit: 
+        This executable is detected by an antivirus software.
+
+    - Packed Binary: 
+        This executable is protected with a packer in order to prevent it 
+        from being reverse engineered.
+
+    - Execution did not terminate correctly: 
+        The executable crashed.
+
+    - Autostart capabilities: 
+        This executable registers processes to be executed at system start.
+        This could result in unwanted actions to be performed automatically.
+
+    - Changes security settings of Internet Explorer:
+        This system alteration could seriously affect safety surfing the World
+        Wide Web.
+
+    - Performs File Modification and Destruction:
+        The executable modifies and destructs files which are not temporary.
+
+    - Spawns Processes:
+        The executable produces processes during the execution.
+
+    - Performs Registry Activities:
+        The executable creates and/or modifies registry entries.
+
+[=============================================================================]
+    Table of Contents
+[=============================================================================]
+
+- General information
+- file.exe
+  a) Registry Activities
+  b) File Activities
+  c) Process Activities
+    - Explorer.EXE
+      a) Registry Activities
+      b) File Activities
+      c) Process Activities
+      d) Other Activities
+    - winlogon.exe
+      a) File Activities
+    - services.exe
+      a) File Activities
+    - lsass.exe
+      a) Registry Activities
+      b) File Activities
+    - svchost.exe
+      a) File Activities
+    - svchost.exe
+      a) File Activities
+    - svchost.exe
+      a) Registry Activities
+      b) File Activities
+      c) Network Activities
+    - svchost.exe
+      a) File Activities
+    - svchost.exe
+      a) File Activities
+    - spoolsv.exe
+    - mscorsvw.exe
+      a) File Activities
+    - wuauclt.exe
+    - ctfmon.exe
+      a) Registry Activities
+    - msmsgs.exe
+    - reader_sl.exe
+    - alg.exe
+    - wscntfy.exe
+    - drlwszvxbeo.exe
+    - kxuckd.exe
+    - cleansweep.exe
+      a) Registry Activities
+      b) File Activities
+      c) Process Activities
+
+
+[#############################################################################]
+    1. General Information
+[#############################################################################]
+[=============================================================================]
+    Information about Anubis' invocation
+[=============================================================================]
+        Time needed:        251 s
+        Report created:     08/12/11, 18:52:35 UTC
+        Termination reason: Timeout
+        Program version:    1.75.3394
+
+[=============================================================================]
+    Global Network Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    DNS Queries:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Name: [ freeways.in ], Query Type: [ DNS_TYPE_A ],
+            Query Result: [  ], Successful: [ 0 ], Protocol: [ udp ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    TCP Connection Attempts:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        From ANUBIS:1028 to 213.155.29.144:444
+
+
+
+[#############################################################################]
+    2. file.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: Primary Analysis Subject
+        Filename:        file.exe
+        MD5:             0f37839f48f7fc77e6d50e14657fb96e
+        SHA-1:           35698c61ad232ff90c5812372d23971118ea37cd
+        File Size:       82432 Bytes
+        Command Line:    "C:\file.exe"
+        Process-status
+        at analysis end: dead
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+
+[=============================================================================]
+    Run-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\Apphelp.dll ],
+               Base Address: [0x77B40000 ], Size: [0x00022000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.DLL ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+
+[=============================================================================]
+    Ikarus Virus Scanner
+[=============================================================================]
+        Trojan-Spy.Win32.SpyEyes (Sig-Id: 1342409)
+
+[=============================================================================]
+    2.a) file.exe - Registry Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Registry Values Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Key: [ HKLM\SYSTEM\WPA\MediaCenter ], 
+             Value Name: [ Installed ], Value: [ 0 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers ], 
+             Value Name: [ AuthenticodeEnabled ], Value: [ 0 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers ], 
+             Value Name: [ DefaultLevel ], Value: [ 262144 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers ], 
+             Value Name: [ PolicyScope ], Value: [ 0 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers ], 
+             Value Name: [ TransparentEnabled ], Value: [ 1 ], 2 times
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328} ], 
+             Value Name: [ HashAlg ], Value: [ 32771 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328} ], 
+             Value Name: [ ItemData ], Value: [ 0x5eab304f957a49896a006c1c31154015 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328} ], 
+             Value Name: [ ItemSize ], Value: [ 779 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328} ], 
+             Value Name: [ SaferFlags ], Value: [ 0 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91} ], 
+             Value Name: [ HashAlg ], Value: [ 32771 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91} ], 
+             Value Name: [ ItemData ], Value: [ 0x67b0d48b343a3fd3bce9dc646704f394 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91} ], 
+             Value Name: [ ItemSize ], Value: [ 517 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91} ], 
+             Value Name: [ SaferFlags ], Value: [ 0 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f} ], 
+             Value Name: [ HashAlg ], Value: [ 32771 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f} ], 
+             Value Name: [ ItemData ], Value: [ 0x327802dcfef8c893dc8ab006dd847d1d ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f} ], 
+             Value Name: [ ItemSize ], Value: [ 918 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f} ], 
+             Value Name: [ SaferFlags ], Value: [ 0 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d} ], 
+             Value Name: [ HashAlg ], Value: [ 32771 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d} ], 
+             Value Name: [ ItemData ], Value: [ 0xbd9a2adb42ebd8560e250e4df8162f67 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d} ], 
+             Value Name: [ ItemSize ], Value: [ 229 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d} ], 
+             Value Name: [ SaferFlags ], Value: [ 0 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc} ], 
+             Value Name: [ HashAlg ], Value: [ 32771 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc} ], 
+             Value Name: [ ItemData ], Value: [ 0x386b085f84ecf669d36b956a22c01e80 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc} ], 
+             Value Name: [ ItemSize ], Value: [ 370 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc} ], 
+             Value Name: [ SaferFlags ], Value: [ 0 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Paths\{dda3f824-d8cb-441b-834d-be2efd2c1a33} ], 
+             Value Name: [ ItemData ], Value: [ %HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache%OLK* ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Paths\{dda3f824-d8cb-441b-834d-be2efd2c1a33} ], 
+             Value Name: [ SaferFlags ], Value: [ 0 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Control\Terminal Server ], 
+             Value Name: [ TSUserEnabled ], Value: [ 0 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders ], 
+             Value Name: [ Cache ], Value: [ C:\Documents and Settings\Administrator\Local Settings\Temporary Internet Files ], 1 time
+
+
+[=============================================================================]
+    2.b) file.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Created:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ C:\cleansweep.exe ]
+        File Name: [ C:\cleansweep.exe\cleansweep.exe ]
+        File Name: [ C:\cleansweep.exe\config.bin ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Modified:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ C:\cleansweep.exe\cleansweep.exe ]
+        File Name: [ C:\cleansweep.exe\config.bin ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Directories Created:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Directory: [ C:\cleansweep.exe ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    File System Control Communication:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File: [ C:\Program Files\Common Files\ ], Control Code: [ 0x00090028 ], 1 time
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ C:\WINDOWS\system32\Apphelp.dll ]
+        File Name: [ C:\Windows\AppPatch\sysmain.sdb ]
+        File Name: [ C:\cleansweep.exe\cleansweep.exe ]
+        File Name: [ C:\file.exe ]
+        File Name: [ \systemroot\system32\kernel32.dll ]
+        File Name: [ \systemroot\system32\ntdll.dll ]
+        File Name: [ \systemroot\system32\user32.dll ]
+
+[=============================================================================]
+    2.c) file.exe - Process Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Processes Created:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Executable: [ C:\cleansweep.exe\cleansweep.exe ], Command Line: [  ]
+        Executable: [ C:\cleansweep.exe\cleansweep.exe ], Command Line: [  ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Remote Threads Created:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Affected Process: [ C:\cleansweep.exe\cleansweep.exe ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Foreign Memory Regions Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Process: [ C:\cleansweep.exe\cleansweep.exe ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Foreign Memory Regions Written:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Process: [ C:\Program Files\Adobe\Reader 8.0\Reader\reader_sl.exe ]
+        Process: [ C:\Program Files\Common Files\drlwszvxbeo.exe ]
+        Process: [ C:\Program Files\Common Files\kxuckd.exe ]
+        Process: [ C:\Program Files\Messenger\msmsgs.exe ]
+        Process: [ C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\mscorsvw.exe ]
+        Process: [ C:\WINDOWS\explorer.exe ]
+        Process: [ C:\WINDOWS\system32\alg.exe ]
+        Process: [ C:\WINDOWS\system32\ctfmon.exe ]
+        Process: [ C:\WINDOWS\system32\lsass.exe ]
+        Process: [ C:\WINDOWS\system32\services.exe ]
+        Process: [ C:\WINDOWS\system32\spoolsv.exe ]
+        Process: [ C:\WINDOWS\system32\svchost.exe ]
+        Process: [ C:\WINDOWS\system32\winlogon.exe ]
+        Process: [ C:\WINDOWS\system32\wscntfy.exe ]
+        Process: [ C:\WINDOWS\system32\wuauclt.exe ]
+        Process: [ C:\cleansweep.exe\cleansweep.exe ]
+        Process: [ C:\file.exe ]
+
+
+
+[#############################################################################]
+    3. Explorer.EXE
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        Explorer.EXE
+        MD5:             12896823fb95bfb3dc9b46bcaedc9923
+        SHA-1:           9d2bf84874abc5b6e9a2744b7865c193c08d362f
+        File Size:       1033728 Bytes
+        Command Line:    C:\WINDOWS\Explorer.EXE
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\BROWSEUI.dll ],
+               Base Address: [0x75F80000 ], Size: [0x000FD000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\system32\SHDOCVW.dll ],
+               Base Address: [0x7E290000 ], Size: [0x00171000 ]
+        Module Name: [ C:\WINDOWS\system32\CRYPT32.dll ],
+               Base Address: [0x77A80000 ], Size: [0x00095000 ]
+        Module Name: [ C:\WINDOWS\system32\MSASN1.dll ],
+               Base Address: [0x77B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\CRYPTUI.dll ],
+               Base Address: [0x754D0000 ], Size: [0x00080000 ]
+        Module Name: [ C:\WINDOWS\system32\NETAPI32.dll ],
+               Base Address: [0x5B860000 ], Size: [0x00055000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WININET.dll ],
+               Base Address: [0x771B0000 ], Size: [0x000AA000 ]
+        Module Name: [ C:\WINDOWS\system32\WINTRUST.dll ],
+               Base Address: [0x76C30000 ], Size: [0x0002E000 ]
+        Module Name: [ C:\WINDOWS\system32\IMAGEHLP.dll ],
+               Base Address: [0x76C90000 ], Size: [0x00028000 ]
+        Module Name: [ C:\WINDOWS\system32\WLDAP32.dll ],
+               Base Address: [0x76F60000 ], Size: [0x0002C000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\UxTheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\system32\ShimEng.dll ],
+               Base Address: [0x5CB70000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\AppPatch\AcGenral.DLL ],
+               Base Address: [0x6F880000 ], Size: [0x001CA000 ]
+        Module Name: [ C:\WINDOWS\system32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\system32\MSACM32.dll ],
+               Base Address: [0x77BE0000 ], Size: [0x00015000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\comctl32.dll ],
+               Base Address: [0x5D090000 ], Size: [0x0009A000 ]
+        Module Name: [ C:\WINDOWS\system32\appHelp.dll ],
+               Base Address: [0x77B40000 ], Size: [0x00022000 ]
+        Module Name: [ C:\WINDOWS\system32\CLBCATQ.DLL ],
+               Base Address: [0x76FD0000 ], Size: [0x0007F000 ]
+        Module Name: [ C:\WINDOWS\system32\COMRes.dll ],
+               Base Address: [0x77050000 ], Size: [0x000C5000 ]
+        Module Name: [ C:\WINDOWS\System32\cscui.dll ],
+               Base Address: [0x77A20000 ], Size: [0x00054000 ]
+        Module Name: [ C:\WINDOWS\System32\CSCDLL.dll ],
+               Base Address: [0x76600000 ], Size: [0x0001D000 ]
+        Module Name: [ C:\WINDOWS\system32\themeui.dll ],
+               Base Address: [0x5BA60000 ], Size: [0x00071000 ]
+        Module Name: [ C:\WINDOWS\system32\MSIMG32.dll ],
+               Base Address: [0x76380000 ], Size: [0x00005000 ]
+        Module Name: [ C:\WINDOWS\system32\xpsp2res.dll ],
+               Base Address: [0x00AC0000 ], Size: [0x002C5000 ]
+        Module Name: [ C:\WINDOWS\system32\actxprxy.dll ],
+               Base Address: [0x71D40000 ], Size: [0x0001B000 ]
+        Module Name: [ C:\WINDOWS\system32\msutb.dll ],
+               Base Address: [0x5FC10000 ], Size: [0x00033000 ]
+        Module Name: [ C:\WINDOWS\system32\MSCTF.dll ],
+               Base Address: [0x74720000 ], Size: [0x0004C000 ]
+        Module Name: [ C:\WINDOWS\system32\urlmon.dll ],
+               Base Address: [0x7E1E0000 ], Size: [0x000A2000 ]
+        Module Name: [ C:\WINDOWS\system32\LINKINFO.dll ],
+               Base Address: [0x76980000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\ntshrui.dll ],
+               Base Address: [0x76990000 ], Size: [0x00025000 ]
+        Module Name: [ C:\WINDOWS\system32\ATL.DLL ],
+               Base Address: [0x76B20000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\rsaenh.dll ],
+               Base Address: [0x68000000 ], Size: [0x00036000 ]
+        Module Name: [ C:\WINDOWS\system32\msi.dll ],
+               Base Address: [0x7D1E0000 ], Size: [0x002BC000 ]
+        Module Name: [ C:\WINDOWS\system32\WINSTA.dll ],
+               Base Address: [0x76360000 ], Size: [0x00010000 ]
+        Module Name: [ C:\WINDOWS\system32\webcheck.dll ],
+               Base Address: [0x74B30000 ], Size: [0x00046000 ]
+        Module Name: [ C:\WINDOWS\system32\WSOCK32.dll ],
+               Base Address: [0x71AD0000 ], Size: [0x00009000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\stobject.dll ],
+               Base Address: [0x76280000 ], Size: [0x00021000 ]
+        Module Name: [ C:\WINDOWS\system32\BatMeter.dll ],
+               Base Address: [0x74AF0000 ], Size: [0x0000A000 ]
+        Module Name: [ C:\WINDOWS\system32\POWRPROF.dll ],
+               Base Address: [0x74AD0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\SETUPAPI.dll ],
+               Base Address: [0x77920000 ], Size: [0x000F3000 ]
+        Module Name: [ C:\WINDOWS\system32\WTSAPI32.dll ],
+               Base Address: [0x76F50000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\NETSHELL.dll ],
+               Base Address: [0x76400000 ], Size: [0x001A5000 ]
+        Module Name: [ C:\WINDOWS\system32\credui.dll ],
+               Base Address: [0x76C00000 ], Size: [0x0002E000 ]
+        Module Name: [ C:\WINDOWS\system32\dot3api.dll ],
+               Base Address: [0x478C0000 ], Size: [0x0000A000 ]
+        Module Name: [ C:\WINDOWS\system32\rtutils.dll ],
+               Base Address: [0x76E80000 ], Size: [0x0000E000 ]
+        Module Name: [ C:\WINDOWS\system32\dot3dlg.dll ],
+               Base Address: [0x736D0000 ], Size: [0x00006000 ]
+        Module Name: [ C:\WINDOWS\system32\OneX.DLL ],
+               Base Address: [0x5DCA0000 ], Size: [0x00028000 ]
+        Module Name: [ C:\WINDOWS\system32\eappcfg.dll ],
+               Base Address: [0x745B0000 ], Size: [0x00022000 ]
+        Module Name: [ C:\WINDOWS\system32\MSVCP60.dll ],
+               Base Address: [0x76080000 ], Size: [0x00065000 ]
+        Module Name: [ C:\WINDOWS\system32\eappprxy.dll ],
+               Base Address: [0x5DCD0000 ], Size: [0x0000E000 ]
+        Module Name: [ C:\WINDOWS\system32\iphlpapi.dll ],
+               Base Address: [0x76D60000 ], Size: [0x00019000 ]
+        Module Name: [ C:\WINDOWS\system32\MPR.dll ],
+               Base Address: [0x71B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\System32\drprov.dll ],
+               Base Address: [0x75F60000 ], Size: [0x00007000 ]
+        Module Name: [ C:\WINDOWS\System32\ntlanman.dll ],
+               Base Address: [0x71C10000 ], Size: [0x0000E000 ]
+        Module Name: [ C:\WINDOWS\System32\NETUI0.dll ],
+               Base Address: [0x71CD0000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\System32\NETUI1.dll ],
+               Base Address: [0x71C90000 ], Size: [0x00040000 ]
+        Module Name: [ C:\WINDOWS\System32\NETRAP.dll ],
+               Base Address: [0x71C80000 ], Size: [0x00007000 ]
+        Module Name: [ C:\WINDOWS\System32\SAMLIB.dll ],
+               Base Address: [0x71BF0000 ], Size: [0x00013000 ]
+        Module Name: [ C:\WINDOWS\System32\davclnt.dll ],
+               Base Address: [0x75F70000 ], Size: [0x0000A000 ]
+        Module Name: [ C:\WINDOWS\system32\comdlg32.dll ],
+               Base Address: [0x763B0000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\MSGINA.dll ],
+               Base Address: [0x75970000 ], Size: [0x000F8000 ]
+        Module Name: [ C:\WINDOWS\system32\ODBC32.dll ],
+               Base Address: [0x74320000 ], Size: [0x0003D000 ]
+        Module Name: [ C:\WINDOWS\system32\odbcint.dll ],
+               Base Address: [0x01350000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\system32\browselc.dll ],
+               Base Address: [0x71600000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\shdoclc.dll ],
+               Base Address: [0x71800000 ], Size: [0x00088000 ]
+
+[=============================================================================]
+    3.a) Explorer.EXE - Registry Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Registry Values Modified:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN ], 
+             Value Name: [ cleansweep.exe ], New Value: [ C:\cleansweep.exe\cleansweep.exe ]
+
+
+[=============================================================================]
+    3.b) Explorer.EXE - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Device Control Communication:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File: [ unnamed file ], Control Code: [ 0x00228144 ], 1 time
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ \systemroot\system32\advapi32.dll ]
+        File Name: [ \systemroot\system32\kernel32.dll ]
+        File Name: [ \systemroot\system32\ntdll.dll ]
+
+[=============================================================================]
+    3.c) Explorer.EXE - Process Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Remote Threads Created:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Affected Process: [ C:\WINDOWS\system32\winlogon.exe ]
+        Affected Process: [ C:\WINDOWS\system32\services.exe ]
+        Affected Process: [ C:\WINDOWS\system32\lsass.exe ]
+        Affected Process: [ C:\WINDOWS\system32\svchost.exe ]
+        Affected Process: [ C:\WINDOWS\system32\svchost.exe ]
+        Affected Process: [ C:\WINDOWS\system32\svchost.exe ]
+        Affected Process: [ C:\WINDOWS\system32\svchost.exe ]
+        Affected Process: [ C:\WINDOWS\system32\svchost.exe ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Foreign Memory Regions Written:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Process: [ C:\WINDOWS\system32\lsass.exe ]
+        Process: [ C:\WINDOWS\system32\services.exe ]
+        Process: [ C:\WINDOWS\system32\spoolsv.exe ]
+        Process: [ C:\WINDOWS\system32\svchost.exe ]
+        Process: [ C:\WINDOWS\system32\winlogon.exe ]
+
+
+[=============================================================================]
+    3.d) Explorer.EXE - Other Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Mutexes Created:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Mutex: [ __CLEANSWEEP__ ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Keyboard Keys Monitored:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Virtual Key Code: [ VK_LBUTTON (1) ], 96 times
+
+
+
+[#############################################################################]
+    4. winlogon.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        winlogon.exe
+        Command Line:    winlogon.exe
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\AUTHZ.dll ],
+               Base Address: [0x776C0000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\CRYPT32.dll ],
+               Base Address: [0x77A80000 ], Size: [0x00095000 ]
+        Module Name: [ C:\WINDOWS\system32\MSASN1.dll ],
+               Base Address: [0x77B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\NDdeApi.dll ],
+               Base Address: [0x75940000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\PROFMAP.dll ],
+               Base Address: [0x75930000 ], Size: [0x0000A000 ]
+        Module Name: [ C:\WINDOWS\system32\NETAPI32.dll ],
+               Base Address: [0x5B860000 ], Size: [0x00055000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\system32\PSAPI.DLL ],
+               Base Address: [0x76BF0000 ], Size: [0x0000B000 ]
+        Module Name: [ C:\WINDOWS\system32\REGAPI.dll ],
+               Base Address: [0x76BC0000 ], Size: [0x0000F000 ]
+        Module Name: [ C:\WINDOWS\system32\SETUPAPI.dll ],
+               Base Address: [0x77920000 ], Size: [0x000F3000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WINSTA.dll ],
+               Base Address: [0x76360000 ], Size: [0x00010000 ]
+        Module Name: [ C:\WINDOWS\system32\WINTRUST.dll ],
+               Base Address: [0x76C30000 ], Size: [0x0002E000 ]
+        Module Name: [ C:\WINDOWS\system32\IMAGEHLP.dll ],
+               Base Address: [0x76C90000 ], Size: [0x00028000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\MSGINA.dll ],
+               Base Address: [0x75970000 ], Size: [0x000F8000 ]
+        Module Name: [ C:\WINDOWS\system32\COMCTL32.dll ],
+               Base Address: [0x5D090000 ], Size: [0x0009A000 ]
+        Module Name: [ C:\WINDOWS\system32\ODBC32.dll ],
+               Base Address: [0x74320000 ], Size: [0x0003D000 ]
+        Module Name: [ C:\WINDOWS\system32\comdlg32.dll ],
+               Base Address: [0x763B0000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\odbcint.dll ],
+               Base Address: [0x00930000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\system32\SHSVCS.dll ],
+               Base Address: [0x776E0000 ], Size: [0x00023000 ]
+        Module Name: [ C:\WINDOWS\system32\sfc.dll ],
+               Base Address: [0x76BB0000 ], Size: [0x00005000 ]
+        Module Name: [ C:\WINDOWS\system32\sfc_os.dll ],
+               Base Address: [0x76C60000 ], Size: [0x0002A000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\Apphelp.dll ],
+               Base Address: [0x77B40000 ], Size: [0x00022000 ]
+        Module Name: [ C:\WINDOWS\system32\WINSCARD.DLL ],
+               Base Address: [0x723D0000 ], Size: [0x0001C000 ]
+        Module Name: [ C:\WINDOWS\system32\WTSAPI32.dll ],
+               Base Address: [0x76F50000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\system32\uxtheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\system32\cscdll.dll ],
+               Base Address: [0x76600000 ], Size: [0x0001D000 ]
+        Module Name: [ C:\WINDOWS\System32\dimsntfy.dll ],
+               Base Address: [0x47020000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WlNotify.dll ],
+               Base Address: [0x75950000 ], Size: [0x0001A000 ]
+        Module Name: [ C:\WINDOWS\system32\MPR.dll ],
+               Base Address: [0x71B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\WINSPOOL.DRV ],
+               Base Address: [0x73000000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\system32\rsaenh.dll ],
+               Base Address: [0x68000000 ], Size: [0x00036000 ]
+        Module Name: [ C:\WINDOWS\system32\SAMLIB.dll ],
+               Base Address: [0x71BF0000 ], Size: [0x00013000 ]
+        Module Name: [ C:\WINDOWS\system32\sxs.dll ],
+               Base Address: [0x7E720000 ], Size: [0x000B0000 ]
+        Module Name: [ C:\WINDOWS\system32\msv1_0.dll ],
+               Base Address: [0x77C70000 ], Size: [0x00024000 ]
+        Module Name: [ C:\WINDOWS\system32\iphlpapi.dll ],
+               Base Address: [0x76D60000 ], Size: [0x00019000 ]
+        Module Name: [ C:\WINDOWS\system32\wldap32.dll ],
+               Base Address: [0x76F60000 ], Size: [0x0002C000 ]
+        Module Name: [ C:\WINDOWS\system32\cscui.dll ],
+               Base Address: [0x77A20000 ], Size: [0x00054000 ]
+        Module Name: [ C:\WINDOWS\system32\xpsp2res.dll ],
+               Base Address: [0x01760000 ], Size: [0x002C5000 ]
+        Module Name: [ C:\WINDOWS\system32\NTMARTA.DLL ],
+               Base Address: [0x77690000 ], Size: [0x00021000 ]
+        Module Name: [ C:\WINDOWS\system32\COMRes.dll ],
+               Base Address: [0x77050000 ], Size: [0x000C5000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\system32\CLBCATQ.DLL ],
+               Base Address: [0x76FD0000 ], Size: [0x0007F000 ]
+
+[=============================================================================]
+    4.a) winlogon.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ \systemroot\system32\ntdll.dll ]
+
+
+[#############################################################################]
+    5. services.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        services.exe
+        MD5:             0e776ed5f7cc9f94299e70461b7b8185
+        SHA-1:           cb5a33cec4c7b8ef4bd5dc8c241005b66b26cbbf
+        File Size:       108544 Bytes
+        Command Line:    C:\WINDOWS\system32\services.exe
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\NCObjAPI.DLL ],
+               Base Address: [0x5F770000 ], Size: [0x0000C000 ]
+        Module Name: [ C:\WINDOWS\system32\MSVCP60.dll ],
+               Base Address: [0x76080000 ], Size: [0x00065000 ]
+        Module Name: [ C:\WINDOWS\system32\SCESRV.dll ],
+               Base Address: [0x7DBD0000 ], Size: [0x00051000 ]
+        Module Name: [ C:\WINDOWS\system32\AUTHZ.dll ],
+               Base Address: [0x776C0000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\system32\umpnpmgr.dll ],
+               Base Address: [0x7DBA0000 ], Size: [0x00021000 ]
+        Module Name: [ C:\WINDOWS\system32\WINSTA.dll ],
+               Base Address: [0x76360000 ], Size: [0x00010000 ]
+        Module Name: [ C:\WINDOWS\system32\NETAPI32.dll ],
+               Base Address: [0x5B860000 ], Size: [0x00055000 ]
+        Module Name: [ C:\WINDOWS\system32\ShimEng.dll ],
+               Base Address: [0x5CB70000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\AppPatch\AcAdProc.dll ],
+               Base Address: [0x47260000 ], Size: [0x0000F000 ]
+        Module Name: [ C:\WINDOWS\system32\Apphelp.dll ],
+               Base Address: [0x77B40000 ], Size: [0x00022000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\eventlog.dll ],
+               Base Address: [0x77B70000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\PSAPI.DLL ],
+               Base Address: [0x76BF0000 ], Size: [0x0000B000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\wtsapi32.dll ],
+               Base Address: [0x76F50000 ], Size: [0x00008000 ]
+
+[=============================================================================]
+    5.a) services.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ \systemroot\system32\ntdll.dll ]
+
+
+[#############################################################################]
+    6. lsass.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        lsass.exe
+        MD5:             bf2466b3e18e970d8a976fb95fc1ca85
+        SHA-1:           de5a73cbb5f51f64c53fb4277ef2c23e70db123f
+        File Size:       13312 Bytes
+        Command Line:    C:\WINDOWS\system32\lsass.exe
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\LSASRV.dll ],
+               Base Address: [0x75730000 ], Size: [0x000B5000 ]
+        Module Name: [ C:\WINDOWS\system32\MPR.dll ],
+               Base Address: [0x71B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\MSASN1.dll ],
+               Base Address: [0x77B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\NETAPI32.dll ],
+               Base Address: [0x5B860000 ], Size: [0x00055000 ]
+        Module Name: [ C:\WINDOWS\system32\NTDSAPI.dll ],
+               Base Address: [0x767A0000 ], Size: [0x00013000 ]
+        Module Name: [ C:\WINDOWS\system32\DNSAPI.dll ],
+               Base Address: [0x76F20000 ], Size: [0x00027000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WLDAP32.dll ],
+               Base Address: [0x76F60000 ], Size: [0x0002C000 ]
+        Module Name: [ C:\WINDOWS\system32\SAMLIB.dll ],
+               Base Address: [0x71BF0000 ], Size: [0x00013000 ]
+        Module Name: [ C:\WINDOWS\system32\SAMSRV.dll ],
+               Base Address: [0x74440000 ], Size: [0x0006A000 ]
+        Module Name: [ C:\WINDOWS\system32\cryptdll.dll ],
+               Base Address: [0x76790000 ], Size: [0x0000C000 ]
+        Module Name: [ C:\WINDOWS\system32\ShimEng.dll ],
+               Base Address: [0x5CB70000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\AppPatch\AcGenral.DLL ],
+               Base Address: [0x6F880000 ], Size: [0x001CA000 ]
+        Module Name: [ C:\WINDOWS\system32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\system32\MSACM32.dll ],
+               Base Address: [0x77BE0000 ], Size: [0x00015000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\system32\UxTheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\comctl32.dll ],
+               Base Address: [0x5D090000 ], Size: [0x0009A000 ]
+        Module Name: [ C:\WINDOWS\system32\msprivs.dll ],
+               Base Address: [0x4D200000 ], Size: [0x0000E000 ]
+        Module Name: [ C:\WINDOWS\system32\kerberos.dll ],
+               Base Address: [0x71CF0000 ], Size: [0x0004C000 ]
+        Module Name: [ C:\WINDOWS\system32\msv1_0.dll ],
+               Base Address: [0x77C70000 ], Size: [0x00024000 ]
+        Module Name: [ C:\WINDOWS\system32\iphlpapi.dll ],
+               Base Address: [0x76D60000 ], Size: [0x00019000 ]
+        Module Name: [ C:\WINDOWS\system32\netlogon.dll ],
+               Base Address: [0x744B0000 ], Size: [0x00065000 ]
+        Module Name: [ C:\WINDOWS\system32\w32time.dll ],
+               Base Address: [0x767C0000 ], Size: [0x0002C000 ]
+        Module Name: [ C:\WINDOWS\system32\MSVCP60.dll ],
+               Base Address: [0x76080000 ], Size: [0x00065000 ]
+        Module Name: [ C:\WINDOWS\system32\schannel.dll ],
+               Base Address: [0x767F0000 ], Size: [0x00027000 ]
+        Module Name: [ C:\WINDOWS\system32\CRYPT32.dll ],
+               Base Address: [0x77A80000 ], Size: [0x00095000 ]
+        Module Name: [ C:\WINDOWS\system32\wdigest.dll ],
+               Base Address: [0x74380000 ], Size: [0x0000F000 ]
+        Module Name: [ C:\WINDOWS\system32\rsaenh.dll ],
+               Base Address: [0x68000000 ], Size: [0x00036000 ]
+        Module Name: [ C:\WINDOWS\system32\scecli.dll ],
+               Base Address: [0x74410000 ], Size: [0x0002F000 ]
+        Module Name: [ C:\WINDOWS\system32\SETUPAPI.dll ],
+               Base Address: [0x77920000 ], Size: [0x000F3000 ]
+        Module Name: [ C:\WINDOWS\system32\ipsecsvc.dll ],
+               Base Address: [0x743E0000 ], Size: [0x0002F000 ]
+        Module Name: [ C:\WINDOWS\system32\AUTHZ.dll ],
+               Base Address: [0x776C0000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\oakley.DLL ],
+               Base Address: [0x75D90000 ], Size: [0x000D0000 ]
+        Module Name: [ C:\WINDOWS\system32\WINIPSEC.DLL ],
+               Base Address: [0x74370000 ], Size: [0x0000B000 ]
+        Module Name: [ C:\WINDOWS\system32\mswsock.dll ],
+               Base Address: [0x71A50000 ], Size: [0x0003F000 ]
+        Module Name: [ C:\WINDOWS\system32\hnetcfg.dll ],
+               Base Address: [0x662B0000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\System32\wshtcpip.dll ],
+               Base Address: [0x71A90000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\dssenh.dll ],
+               Base Address: [0x68100000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\system32\pstorsvc.dll ],
+               Base Address: [0x743A0000 ], Size: [0x0000B000 ]
+        Module Name: [ C:\WINDOWS\system32\psbase.dll ],
+               Base Address: [0x743C0000 ], Size: [0x0001B000 ]
+
+[=============================================================================]
+    6.a) lsass.exe - Registry Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Registry Values Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Key: [ HKLM\SECURITY\Policy\SecDesc ], 
+             Value Name: [  ], Value: [ 0x0100048098000000a8000000000000001400000002008400060000000100 ], 2 times
+
+
+[=============================================================================]
+    6.b) lsass.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ C:\lsass, Flags: Named pipe ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Modified:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ C:\lsass, Flags: Named pipe ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    File System Control Communication:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File: [ C:\lsass, Flags: Named pipe ], Control Code: [ 0x00110004 ], 4 times
+        File: [ C:\lsass, Flags: Named pipe ], Control Code: [ 0x00110008 ], 2 times
+        File: [ C:\lsass, Flags: Named pipe ], Control Code: [ 0x00110024 ], 4 times
+        File: [ C:\lsass, Flags: Named pipe ], Control Code: [ 0x0011001C ], 8 times
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ \systemroot\system32\ntdll.dll ]
+
+
+[#############################################################################]
+    7. svchost.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        svchost.exe
+        MD5:             27c6d03bcdb8cfeb96b716f3d8be3e18
+        SHA-1:           49083ae3725a0488e0a8fbbe1335c745f70c4667
+        File Size:       14336 Bytes
+        Command Line:    C:\WINDOWS\system32\svchost -k DcomLaunch
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\ShimEng.dll ],
+               Base Address: [0x5CB70000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\AppPatch\AcGenral.DLL ],
+               Base Address: [0x6F880000 ], Size: [0x001CA000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\system32\MSACM32.dll ],
+               Base Address: [0x77BE0000 ], Size: [0x00015000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\system32\UxTheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\comctl32.dll ],
+               Base Address: [0x5D090000 ], Size: [0x0009A000 ]
+        Module Name: [ C:\WINDOWS\system32\NTMARTA.DLL ],
+               Base Address: [0x77690000 ], Size: [0x00021000 ]
+        Module Name: [ C:\WINDOWS\system32\SAMLIB.dll ],
+               Base Address: [0x71BF0000 ], Size: [0x00013000 ]
+        Module Name: [ C:\WINDOWS\system32\WLDAP32.dll ],
+               Base Address: [0x76F60000 ], Size: [0x0002C000 ]
+        Module Name: [ c:\windows\system32\rpcss.dll ],
+               Base Address: [0x76A80000 ], Size: [0x00064000 ]
+        Module Name: [ c:\windows\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ c:\windows\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\xpsp2res.dll ],
+               Base Address: [0x005F0000 ], Size: [0x002C5000 ]
+        Module Name: [ C:\WINDOWS\system32\CLBCATQ.DLL ],
+               Base Address: [0x76FD0000 ], Size: [0x0007F000 ]
+        Module Name: [ C:\WINDOWS\system32\COMRes.dll ],
+               Base Address: [0x77050000 ], Size: [0x000C5000 ]
+        Module Name: [ c:\windows\system32\termsrv.dll ],
+               Base Address: [0x760F0000 ], Size: [0x00053000 ]
+        Module Name: [ c:\windows\system32\ICAAPI.dll ],
+               Base Address: [0x74F70000 ], Size: [0x00006000 ]
+        Module Name: [ c:\windows\system32\SETUPAPI.dll ],
+               Base Address: [0x77920000 ], Size: [0x000F3000 ]
+        Module Name: [ C:\WINDOWS\system32\WINTRUST.dll ],
+               Base Address: [0x76C30000 ], Size: [0x0002E000 ]
+        Module Name: [ C:\WINDOWS\system32\CRYPT32.dll ],
+               Base Address: [0x77A80000 ], Size: [0x00095000 ]
+        Module Name: [ C:\WINDOWS\system32\MSASN1.dll ],
+               Base Address: [0x77B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\IMAGEHLP.dll ],
+               Base Address: [0x76C90000 ], Size: [0x00028000 ]
+        Module Name: [ c:\windows\system32\AUTHZ.dll ],
+               Base Address: [0x776C0000 ], Size: [0x00012000 ]
+        Module Name: [ c:\windows\system32\mstlsapi.dll ],
+               Base Address: [0x75110000 ], Size: [0x0001F000 ]
+        Module Name: [ c:\windows\system32\ACTIVEDS.dll ],
+               Base Address: [0x77CC0000 ], Size: [0x00032000 ]
+        Module Name: [ c:\windows\system32\adsldpc.dll ],
+               Base Address: [0x76E10000 ], Size: [0x00025000 ]
+        Module Name: [ C:\WINDOWS\system32\NETAPI32.dll ],
+               Base Address: [0x5B860000 ], Size: [0x00055000 ]
+        Module Name: [ c:\windows\system32\ATL.DLL ],
+               Base Address: [0x76B20000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\REGAPI.dll ],
+               Base Address: [0x76BC0000 ], Size: [0x0000F000 ]
+        Module Name: [ C:\WINDOWS\system32\rsaenh.dll ],
+               Base Address: [0x68000000 ], Size: [0x00036000 ]
+        Module Name: [ C:\WINDOWS\system32\Apphelp.dll ],
+               Base Address: [0x77B40000 ], Size: [0x00022000 ]
+
+[=============================================================================]
+    7.a) svchost.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ \systemroot\system32\ntdll.dll ]
+
+
+[#############################################################################]
+    8. svchost.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        svchost.exe
+        Command Line:    C:\WINDOWS\system32\svchost -k rpcss
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\ShimEng.dll ],
+               Base Address: [0x5CB70000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\AppPatch\AcGenral.DLL ],
+               Base Address: [0x6F880000 ], Size: [0x001CA000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\system32\MSACM32.dll ],
+               Base Address: [0x77BE0000 ], Size: [0x00015000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\system32\UxTheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\comctl32.dll ],
+               Base Address: [0x5D090000 ], Size: [0x0009A000 ]
+        Module Name: [ c:\windows\system32\rpcss.dll ],
+               Base Address: [0x76A80000 ], Size: [0x00064000 ]
+        Module Name: [ c:\windows\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ c:\windows\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\xpsp2res.dll ],
+               Base Address: [0x005F0000 ], Size: [0x002C5000 ]
+        Module Name: [ C:\WINDOWS\system32\rsaenh.dll ],
+               Base Address: [0x68000000 ], Size: [0x00036000 ]
+        Module Name: [ C:\WINDOWS\system32\mswsock.dll ],
+               Base Address: [0x71A50000 ], Size: [0x0003F000 ]
+        Module Name: [ C:\WINDOWS\system32\hnetcfg.dll ],
+               Base Address: [0x662B0000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\System32\wshtcpip.dll ],
+               Base Address: [0x71A90000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\DNSAPI.dll ],
+               Base Address: [0x76F20000 ], Size: [0x00027000 ]
+        Module Name: [ C:\WINDOWS\system32\iphlpapi.dll ],
+               Base Address: [0x76D60000 ], Size: [0x00019000 ]
+        Module Name: [ C:\WINDOWS\System32\winrnr.dll ],
+               Base Address: [0x76FB0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WLDAP32.dll ],
+               Base Address: [0x76F60000 ], Size: [0x0002C000 ]
+        Module Name: [ C:\WINDOWS\system32\rasadhlp.dll ],
+               Base Address: [0x76FC0000 ], Size: [0x00006000 ]
+        Module Name: [ C:\WINDOWS\system32\CLBCATQ.DLL ],
+               Base Address: [0x76FD0000 ], Size: [0x0007F000 ]
+        Module Name: [ C:\WINDOWS\system32\COMRes.dll ],
+               Base Address: [0x77050000 ], Size: [0x000C5000 ]
+
+[=============================================================================]
+    8.a) svchost.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ \systemroot\system32\ntdll.dll ]
+
+
+[#############################################################################]
+    9. svchost.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        svchost.exe
+        Command Line:    C:\WINDOWS\System32\svchost.exe -k netsvcs
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\System32\ShimEng.dll ],
+               Base Address: [0x5CB70000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\AppPatch\AcGenral.DLL ],
+               Base Address: [0x6F880000 ], Size: [0x001CA000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\System32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\System32\MSACM32.dll ],
+               Base Address: [0x77BE0000 ], Size: [0x00015000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\System32\UxTheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\comctl32.dll ],
+               Base Address: [0x5D090000 ], Size: [0x0009A000 ]
+        Module Name: [ C:\WINDOWS\System32\NTMARTA.DLL ],
+               Base Address: [0x77690000 ], Size: [0x00021000 ]
+        Module Name: [ C:\WINDOWS\System32\SAMLIB.dll ],
+               Base Address: [0x71BF0000 ], Size: [0x00013000 ]
+        Module Name: [ C:\WINDOWS\system32\WLDAP32.dll ],
+               Base Address: [0x76F60000 ], Size: [0x0002C000 ]
+        Module Name: [ C:\WINDOWS\System32\xpsp2res.dll ],
+               Base Address: [0x005B0000 ], Size: [0x002C5000 ]
+        Module Name: [ c:\windows\system32\shsvcs.dll ],
+               Base Address: [0x776E0000 ], Size: [0x00023000 ]
+        Module Name: [ C:\WINDOWS\System32\WINSTA.dll ],
+               Base Address: [0x76360000 ], Size: [0x00010000 ]
+        Module Name: [ C:\WINDOWS\system32\NETAPI32.dll ],
+               Base Address: [0x5B860000 ], Size: [0x00055000 ]
+        Module Name: [ C:\WINDOWS\System32\rsaenh.dll ],
+               Base Address: [0x68000000 ], Size: [0x00036000 ]
+        Module Name: [ c:\windows\system32\dhcpcsvc.dll ],
+               Base Address: [0x7D4B0000 ], Size: [0x00022000 ]
+        Module Name: [ c:\windows\system32\DNSAPI.dll ],
+               Base Address: [0x76F20000 ], Size: [0x00027000 ]
+        Module Name: [ c:\windows\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ c:\windows\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ c:\windows\system32\iphlpapi.dll ],
+               Base Address: [0x76D60000 ], Size: [0x00019000 ]
+        Module Name: [ c:\windows\system32\wzcsvc.dll ],
+               Base Address: [0x7DB10000 ], Size: [0x0008C000 ]
+        Module Name: [ c:\windows\system32\rtutils.dll ],
+               Base Address: [0x76E80000 ], Size: [0x0000E000 ]
+        Module Name: [ c:\windows\system32\WMI.dll ],
+               Base Address: [0x76D30000 ], Size: [0x00004000 ]
+        Module Name: [ C:\WINDOWS\system32\CRYPT32.dll ],
+               Base Address: [0x77A80000 ], Size: [0x00095000 ]
+        Module Name: [ C:\WINDOWS\system32\MSASN1.dll ],
+               Base Address: [0x77B20000 ], Size: [0x00012000 ]
+        Module Name: [ c:\windows\system32\EapolQec.dll ],
+               Base Address: [0x72810000 ], Size: [0x0000B000 ]
+        Module Name: [ c:\windows\system32\ATL.DLL ],
+               Base Address: [0x76B20000 ], Size: [0x00011000 ]
+        Module Name: [ c:\windows\system32\QUtil.dll ],
+               Base Address: [0x726C0000 ], Size: [0x00016000 ]
+        Module Name: [ c:\windows\system32\MSVCP60.dll ],
+               Base Address: [0x76080000 ], Size: [0x00065000 ]
+        Module Name: [ c:\windows\system32\dot3api.dll ],
+               Base Address: [0x478C0000 ], Size: [0x0000A000 ]
+        Module Name: [ c:\windows\system32\WTSAPI32.dll ],
+               Base Address: [0x76F50000 ], Size: [0x00008000 ]
+        Module Name: [ c:\windows\system32\ESENT.dll ],
+               Base Address: [0x606B0000 ], Size: [0x0010D000 ]
+        Module Name: [ C:\WINDOWS\System32\CLBCATQ.DLL ],
+               Base Address: [0x76FD0000 ], Size: [0x0007F000 ]
+        Module Name: [ C:\WINDOWS\System32\COMRes.dll ],
+               Base Address: [0x77050000 ], Size: [0x000C5000 ]
+        Module Name: [ C:\WINDOWS\System32\rastls.dll ],
+               Base Address: [0x76B70000 ], Size: [0x00027000 ]
+        Module Name: [ C:\WINDOWS\system32\CRYPTUI.dll ],
+               Base Address: [0x754D0000 ], Size: [0x00080000 ]
+        Module Name: [ C:\WINDOWS\system32\WININET.dll ],
+               Base Address: [0x771B0000 ], Size: [0x000AA000 ]
+        Module Name: [ C:\WINDOWS\system32\WINTRUST.dll ],
+               Base Address: [0x76C30000 ], Size: [0x0002E000 ]
+        Module Name: [ C:\WINDOWS\system32\IMAGEHLP.dll ],
+               Base Address: [0x76C90000 ], Size: [0x00028000 ]
+        Module Name: [ C:\WINDOWS\System32\MPRAPI.dll ],
+               Base Address: [0x76D40000 ], Size: [0x00018000 ]
+        Module Name: [ C:\WINDOWS\System32\ACTIVEDS.dll ],
+               Base Address: [0x77CC0000 ], Size: [0x00032000 ]
+        Module Name: [ C:\WINDOWS\System32\adsldpc.dll ],
+               Base Address: [0x76E10000 ], Size: [0x00025000 ]
+        Module Name: [ C:\WINDOWS\System32\SETUPAPI.dll ],
+               Base Address: [0x77920000 ], Size: [0x000F3000 ]
+        Module Name: [ C:\WINDOWS\System32\RASAPI32.dll ],
+               Base Address: [0x76EE0000 ], Size: [0x0003C000 ]
+        Module Name: [ C:\WINDOWS\System32\rasman.dll ],
+               Base Address: [0x76E90000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\System32\TAPI32.dll ],
+               Base Address: [0x76EB0000 ], Size: [0x0002F000 ]
+        Module Name: [ C:\WINDOWS\System32\SCHANNEL.dll ],
+               Base Address: [0x767F0000 ], Size: [0x00027000 ]
+        Module Name: [ C:\WINDOWS\System32\WinSCard.dll ],
+               Base Address: [0x723D0000 ], Size: [0x0001C000 ]
+        Module Name: [ C:\WINDOWS\System32\PSAPI.DLL ],
+               Base Address: [0x76BF0000 ], Size: [0x0000B000 ]
+        Module Name: [ C:\WINDOWS\System32\raschap.dll ],
+               Base Address: [0x76BD0000 ], Size: [0x00016000 ]
+        Module Name: [ C:\WINDOWS\system32\msv1_0.dll ],
+               Base Address: [0x77C70000 ], Size: [0x00024000 ]
+        Module Name: [ c:\windows\system32\schedsvc.dll ],
+               Base Address: [0x77300000 ], Size: [0x00033000 ]
+        Module Name: [ c:\windows\system32\NTDSAPI.dll ],
+               Base Address: [0x767A0000 ], Size: [0x00013000 ]
+        Module Name: [ C:\WINDOWS\System32\MSIDLE.DLL ],
+               Base Address: [0x74F50000 ], Size: [0x00005000 ]
+        Module Name: [ c:\windows\system32\audiosrv.dll ],
+               Base Address: [0x708B0000 ], Size: [0x0000D000 ]
+        Module Name: [ c:\windows\system32\wkssvc.dll ],
+               Base Address: [0x76E40000 ], Size: [0x00023000 ]
+        Module Name: [ c:\windows\system32\qmgr.dll ],
+               Base Address: [0x5B9F0000 ], Size: [0x0006B000 ]
+        Module Name: [ C:\WINDOWS\system32\MPR.dll ],
+               Base Address: [0x71B20000 ], Size: [0x00012000 ]
+        Module Name: [ c:\windows\system32\SHFOLDER.dll ],
+               Base Address: [0x76780000 ], Size: [0x00009000 ]
+        Module Name: [ c:\windows\system32\WINHTTP.dll ],
+               Base Address: [0x4D4F0000 ], Size: [0x00059000 ]
+        Module Name: [ C:\WINDOWS\system32\mswsock.dll ],
+               Base Address: [0x71A50000 ], Size: [0x0003F000 ]
+        Module Name: [ C:\WINDOWS\System32\hnetcfg.dll ],
+               Base Address: [0x662B0000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\System32\wshtcpip.dll ],
+               Base Address: [0x71A90000 ], Size: [0x00008000 ]
+        Module Name: [ c:\windows\system32\cryptsvc.dll ],
+               Base Address: [0x76CE0000 ], Size: [0x00012000 ]
+        Module Name: [ c:\windows\system32\certcli.dll ],
+               Base Address: [0x77B90000 ], Size: [0x00032000 ]
+        Module Name: [ c:\windows\system32\dmserver.dll ],
+               Base Address: [0x74F90000 ], Size: [0x00009000 ]
+        Module Name: [ c:\windows\system32\ersvc.dll ],
+               Base Address: [0x74F80000 ], Size: [0x00009000 ]
+        Module Name: [ c:\windows\system32\es.dll ],
+               Base Address: [0x77710000 ], Size: [0x00042000 ]
+        Module Name: [ c:\windows\pchealth\helpctr\binaries\pchsvc.dll ],
+               Base Address: [0x74F40000 ], Size: [0x0000C000 ]
+        Module Name: [ c:\windows\system32\srvsvc.dll ],
+               Base Address: [0x75090000 ], Size: [0x0001A000 ]
+        Module Name: [ c:\windows\system32\netman.dll ],
+               Base Address: [0x77D00000 ], Size: [0x00033000 ]
+        Module Name: [ c:\windows\system32\netshell.dll ],
+               Base Address: [0x76400000 ], Size: [0x001A5000 ]
+        Module Name: [ c:\windows\system32\credui.dll ],
+               Base Address: [0x76C00000 ], Size: [0x0002E000 ]
+        Module Name: [ c:\windows\system32\dot3dlg.dll ],
+               Base Address: [0x736D0000 ], Size: [0x00006000 ]
+        Module Name: [ c:\windows\system32\OneX.DLL ],
+               Base Address: [0x5DCA0000 ], Size: [0x00028000 ]
+        Module Name: [ c:\windows\system32\eappcfg.dll ],
+               Base Address: [0x745B0000 ], Size: [0x00022000 ]
+        Module Name: [ c:\windows\system32\eappprxy.dll ],
+               Base Address: [0x5DCD0000 ], Size: [0x0000E000 ]
+        Module Name: [ c:\windows\system32\WZCSAPI.DLL ],
+               Base Address: [0x73030000 ], Size: [0x00010000 ]
+        Module Name: [ c:\windows\system32\srsvc.dll ],
+               Base Address: [0x751A0000 ], Size: [0x0002E000 ]
+        Module Name: [ c:\windows\system32\POWRPROF.dll ],
+               Base Address: [0x74AD0000 ], Size: [0x00008000 ]
+        Module Name: [ c:\windows\system32\sens.dll ],
+               Base Address: [0x722D0000 ], Size: [0x0000D000 ]
+        Module Name: [ c:\windows\system32\seclogon.dll ],
+               Base Address: [0x73D20000 ], Size: [0x00008000 ]
+        Module Name: [ c:\windows\system32\trkwks.dll ],
+               Base Address: [0x75070000 ], Size: [0x00019000 ]
+        Module Name: [ c:\windows\system32\w32time.dll ],
+               Base Address: [0x767C0000 ], Size: [0x0002C000 ]
+        Module Name: [ c:\windows\system32\wbem\wmisvc.dll ],
+               Base Address: [0x59490000 ], Size: [0x00028000 ]
+        Module Name: [ C:\WINDOWS\system32\VSSAPI.DLL ],
+               Base Address: [0x753E0000 ], Size: [0x0006D000 ]
+        Module Name: [ c:\windows\system32\wuauserv.dll ],
+               Base Address: [0x50000000 ], Size: [0x00005000 ]
+        Module Name: [ C:\WINDOWS\system32\wuaueng.dll ],
+               Base Address: [0x50040000 ], Size: [0x001D9000 ]
+        Module Name: [ C:\WINDOWS\System32\WINSPOOL.DRV ],
+               Base Address: [0x73000000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\System32\Cabinet.dll ],
+               Base Address: [0x75150000 ], Size: [0x00013000 ]
+        Module Name: [ C:\WINDOWS\System32\mspatcha.dll ],
+               Base Address: [0x600A0000 ], Size: [0x0000B000 ]
+        Module Name: [ c:\windows\system32\wscsvc.dll ],
+               Base Address: [0x4C0A0000 ], Size: [0x00017000 ]
+        Module Name: [ c:\windows\system32\msi.dll ],
+               Base Address: [0x7D1E0000 ], Size: [0x002BC000 ]
+        Module Name: [ C:\WINDOWS\system32\wbem\wbemcomn.dll ],
+               Base Address: [0x75290000 ], Size: [0x00037000 ]
+        Module Name: [ C:\WINDOWS\System32\winrnr.dll ],
+               Base Address: [0x76FB0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\System32\rasadhlp.dll ],
+               Base Address: [0x76FC0000 ], Size: [0x00006000 ]
+        Module Name: [ C:\WINDOWS\System32\sfc.dll ],
+               Base Address: [0x76BB0000 ], Size: [0x00005000 ]
+        Module Name: [ C:\WINDOWS\System32\sfc_os.dll ],
+               Base Address: [0x76C60000 ], Size: [0x0002A000 ]
+        Module Name: [ c:\windows\system32\browser.dll ],
+               Base Address: [0x76DA0000 ], Size: [0x00016000 ]
+        Module Name: [ C:\WINDOWS\system32\Apphelp.dll ],
+               Base Address: [0x77B40000 ], Size: [0x00022000 ]
+        Module Name: [ C:\WINDOWS\System32\SXS.DLL ],
+               Base Address: [0x7E720000 ], Size: [0x000B0000 ]
+        Module Name: [ C:\WINDOWS\system32\comsvcs.dll ],
+               Base Address: [0x76620000 ], Size: [0x0013C000 ]
+        Module Name: [ C:\WINDOWS\system32\colbact.DLL ],
+               Base Address: [0x75130000 ], Size: [0x00014000 ]
+        Module Name: [ C:\WINDOWS\system32\MTXCLU.DLL ],
+               Base Address: [0x750F0000 ], Size: [0x00013000 ]
+        Module Name: [ C:\WINDOWS\system32\WSOCK32.dll ],
+               Base Address: [0x71AD0000 ], Size: [0x00009000 ]
+        Module Name: [ C:\WINDOWS\System32\CLUSAPI.DLL ],
+               Base Address: [0x76D10000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\System32\RESUTILS.DLL ],
+               Base Address: [0x750B0000 ], Size: [0x00012000 ]
+        Module Name: [ c:\windows\system32\ipnathlp.dll ],
+               Base Address: [0x66460000 ], Size: [0x00055000 ]
+        Module Name: [ c:\windows\system32\AUTHZ.dll ],
+               Base Address: [0x776C0000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\upnp.dll ],
+               Base Address: [0x76DE0000 ], Size: [0x00024000 ]
+        Module Name: [ C:\WINDOWS\system32\SSDPAPI.dll ],
+               Base Address: [0x74F00000 ], Size: [0x0000C000 ]
+        Module Name: [ C:\WINDOWS\System32\Wbem\wbemcore.dll ],
+               Base Address: [0x762C0000 ], Size: [0x00085000 ]
+        Module Name: [ C:\WINDOWS\System32\Wbem\esscli.dll ],
+               Base Address: [0x75310000 ], Size: [0x0003F000 ]
+        Module Name: [ C:\WINDOWS\System32\Wbem\FastProx.dll ],
+               Base Address: [0x75690000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\wbem\wbemsvc.dll ],
+               Base Address: [0x74ED0000 ], Size: [0x0000E000 ]
+        Module Name: [ C:\WINDOWS\system32\wbem\wmiutils.dll ],
+               Base Address: [0x75020000 ], Size: [0x0001B000 ]
+        Module Name: [ C:\WINDOWS\system32\wbem\repdrvfs.dll ],
+               Base Address: [0x75200000 ], Size: [0x0002F000 ]
+        Module Name: [ C:\WINDOWS\system32\wbem\wmiprvsd.dll ],
+               Base Address: [0x597F0000 ], Size: [0x0006D000 ]
+        Module Name: [ C:\WINDOWS\system32\NCObjAPI.DLL ],
+               Base Address: [0x5F770000 ], Size: [0x0000C000 ]
+        Module Name: [ C:\WINDOWS\system32\wbem\wbemess.dll ],
+               Base Address: [0x75390000 ], Size: [0x00046000 ]
+        Module Name: [ C:\WINDOWS\system32\wups2.dll ],
+               Base Address: [0x50F00000 ], Size: [0x0000D000 ]
+        Module Name: [ C:\WINDOWS\system32\wbem\ncprov.dll ],
+               Base Address: [0x5F740000 ], Size: [0x0000E000 ]
+        Module Name: [ C:\WINDOWS\System32\RASDLG.dll ],
+               Base Address: [0x768D0000 ], Size: [0x000A4000 ]
+        Module Name: [ C:\WINDOWS\System32\dssenh.dll ],
+               Base Address: [0x68100000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\system32\wuapi.dll ],
+               Base Address: [0x506A0000 ], Size: [0x0008E000 ]
+
+[=============================================================================]
+    9.a) svchost.exe - Registry Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Registry Values Modified:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Key: [ HKLM\SOFTWARE\MICROSOFT\WINDOWS NT\CURRENTVERSION\PREFETCHER ], 
+             Value Name: [ LastTraceFailure ], New Value: [ 4 ]
+        Key: [ HKLM\SOFTWARE\MICROSOFT\WINDOWS NT\CURRENTVERSION\PREFETCHER ], 
+             Value Name: [ TracesProcessed ], New Value: [ 11 ]
+        Key: [ HKLM\SOFTWARE\MICROSOFT\WINDOWS NT\CURRENTVERSION\PREFETCHER ], 
+             Value Name: [ TracesSuccessful ], New Value: [ 6 ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Registry Values Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Key: [ HKLM\System\CurrentControlSet\Control\ComputerName\ActiveComputerName ], 
+             Value Name: [ ComputerName ], Value: [ PC ], 1 time
+
+
+[=============================================================================]
+    9.b) svchost.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ C:\cleansweep.exe\config.bin ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Modified:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ \Device\Afd\Endpoint ]
+        File Name: [ \Device\RasAcd ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Device Control Communication:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File: [ \Device\Afd\Endpoint ], Control Code: [ AFD_SET_CONTEXT (0x00012047) ], 2 times
+        File: [ \Device\RasAcd ], Control Code: [ 0x00F14014 ], 1 time
+        File: [ \Device\Afd\Endpoint ], Control Code: [ AFD_BIND (0x00012003) ], 1 time
+        File: [ \Device\Afd\Endpoint ], Control Code: [ AFD_GET_TDI_HANDLES (0x00012037) ], 1 time
+        File: [ \Device\Afd\Endpoint ], Control Code: [ AFD_CONNECT (0x00012007) ], 1 time
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ \systemroot\system32\kernel32.dll ]
+        File Name: [ \systemroot\system32\ntdll.dll ]
+        File Name: [ \systemroot\system32\ws2_32.dll ]
+
+[=============================================================================]
+    9.c) svchost.exe - Network Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    DNS Queries:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Name: [ 213.155.29.144 ], Query Type: [ DNS_TYPE_A ],
+            Query Result: [ 213.155.29.144 ], Successful: [ YES ], Protocol: [  ]
+
+
+
+[#############################################################################]
+    10. svchost.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        svchost.exe
+        Command Line:    C:\WINDOWS\system32\svchost.exe -k NetworkService
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\ShimEng.dll ],
+               Base Address: [0x5CB70000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\AppPatch\AcGenral.DLL ],
+               Base Address: [0x6F880000 ], Size: [0x001CA000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\system32\MSACM32.dll ],
+               Base Address: [0x77BE0000 ], Size: [0x00015000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\system32\UxTheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\comctl32.dll ],
+               Base Address: [0x5D090000 ], Size: [0x0009A000 ]
+        Module Name: [ c:\windows\system32\dnsrslvr.dll ],
+               Base Address: [0x76770000 ], Size: [0x0000D000 ]
+        Module Name: [ c:\windows\system32\DNSAPI.dll ],
+               Base Address: [0x76F20000 ], Size: [0x00027000 ]
+        Module Name: [ c:\windows\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ c:\windows\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ c:\windows\system32\iphlpapi.dll ],
+               Base Address: [0x76D60000 ], Size: [0x00019000 ]
+        Module Name: [ C:\WINDOWS\system32\rsaenh.dll ],
+               Base Address: [0x68000000 ], Size: [0x00036000 ]
+        Module Name: [ C:\WINDOWS\system32\mswsock.dll ],
+               Base Address: [0x71A50000 ], Size: [0x0003F000 ]
+        Module Name: [ C:\WINDOWS\system32\hnetcfg.dll ],
+               Base Address: [0x662B0000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\System32\wshtcpip.dll ],
+               Base Address: [0x71A90000 ], Size: [0x00008000 ]
+
+[=============================================================================]
+    10.a) svchost.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ \systemroot\system32\ntdll.dll ]
+
+
+[#############################################################################]
+    11. svchost.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        svchost.exe
+        Command Line:    C:\WINDOWS\system32\svchost.exe -k LocalService
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\ShimEng.dll ],
+               Base Address: [0x5CB70000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\AppPatch\AcGenral.DLL ],
+               Base Address: [0x6F880000 ], Size: [0x001CA000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\system32\MSACM32.dll ],
+               Base Address: [0x77BE0000 ], Size: [0x00015000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\system32\UxTheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\comctl32.dll ],
+               Base Address: [0x5D090000 ], Size: [0x0009A000 ]
+        Module Name: [ C:\WINDOWS\system32\NTMARTA.DLL ],
+               Base Address: [0x77690000 ], Size: [0x00021000 ]
+        Module Name: [ C:\WINDOWS\system32\SAMLIB.dll ],
+               Base Address: [0x71BF0000 ], Size: [0x00013000 ]
+        Module Name: [ C:\WINDOWS\system32\WLDAP32.dll ],
+               Base Address: [0x76F60000 ], Size: [0x0002C000 ]
+        Module Name: [ C:\WINDOWS\system32\xpsp2res.dll ],
+               Base Address: [0x005B0000 ], Size: [0x002C5000 ]
+        Module Name: [ c:\windows\system32\lmhsvc.dll ],
+               Base Address: [0x74C40000 ], Size: [0x00006000 ]
+        Module Name: [ c:\windows\system32\iphlpapi.dll ],
+               Base Address: [0x76D60000 ], Size: [0x00019000 ]
+        Module Name: [ c:\windows\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ c:\windows\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ c:\windows\system32\webclnt.dll ],
+               Base Address: [0x5A6E0000 ], Size: [0x00015000 ]
+        Module Name: [ C:\WINDOWS\system32\WININET.dll ],
+               Base Address: [0x771B0000 ], Size: [0x000AA000 ]
+        Module Name: [ C:\WINDOWS\system32\CRYPT32.dll ],
+               Base Address: [0x77A80000 ], Size: [0x00095000 ]
+        Module Name: [ C:\WINDOWS\system32\MSASN1.dll ],
+               Base Address: [0x77B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\wsock32.dll ],
+               Base Address: [0x71AD0000 ], Size: [0x00009000 ]
+        Module Name: [ c:\windows\system32\regsvc.dll ],
+               Base Address: [0x76AF0000 ], Size: [0x00012000 ]
+        Module Name: [ c:\windows\system32\ssdpsrv.dll ],
+               Base Address: [0x765E0000 ], Size: [0x00014000 ]
+        Module Name: [ C:\WINDOWS\system32\hnetcfg.dll ],
+               Base Address: [0x662B0000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\CLBCATQ.DLL ],
+               Base Address: [0x76FD0000 ], Size: [0x0007F000 ]
+        Module Name: [ C:\WINDOWS\system32\COMRes.dll ],
+               Base Address: [0x77050000 ], Size: [0x000C5000 ]
+        Module Name: [ C:\WINDOWS\system32\mswsock.dll ],
+               Base Address: [0x71A50000 ], Size: [0x0003F000 ]
+        Module Name: [ C:\WINDOWS\System32\wshtcpip.dll ],
+               Base Address: [0x71A90000 ], Size: [0x00008000 ]
+
+[=============================================================================]
+    11.a) svchost.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ \systemroot\system32\ntdll.dll ]
+
+
+[#############################################################################]
+    12. spoolsv.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        spoolsv.exe
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+
+
+[#############################################################################]
+    13. mscorsvw.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        mscorsvw.exe
+        MD5:             c5a75eb48e2344abdc162bda79e16841
+        SHA-1:           ed4851c89bc80c7a38960bc14686513ac1b3fb47
+        File Size:       130384 Bytes
+        Command Line:    C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\mscorsvw.exe
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\MSVCR100_CLR0400.dll ],
+               Base Address: [0x79060000 ], Size: [0x000BE000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\mscoree.dll ],
+               Base Address: [0x79000000 ], Size: [0x0004A000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\mscorsvc.dll ],
+               Base Address: [0x608D0000 ], Size: [0x00054000 ]
+        Module Name: [ C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\fusion.dll ],
+               Base Address: [0x604A0000 ], Size: [0x0000C000 ]
+        Module Name: [ C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\mscoreei.dll ],
+               Base Address: [0x603B0000 ], Size: [0x00066000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\msidle.dll ],
+               Base Address: [0x74F50000 ], Size: [0x00005000 ]
+        Module Name: [ C:\WINDOWS\system32\Wtsapi32.dll ],
+               Base Address: [0x76F50000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WINSTA.dll ],
+               Base Address: [0x76360000 ], Size: [0x00010000 ]
+        Module Name: [ C:\WINDOWS\system32\NETAPI32.dll ],
+               Base Address: [0x5B860000 ], Size: [0x00055000 ]
+        Module Name: [ C:\WINDOWS\system32\powrprof.dll ],
+               Base Address: [0x74AD0000 ], Size: [0x00008000 ]
+
+[=============================================================================]
+    13.a) mscorsvw.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ PIPE\lsarpc ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Modified:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ PIPE\lsarpc ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    File System Control Communication:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File: [ PIPE\lsarpc ], Control Code: [ 0x0011C017 ], 6 times
+
+
+[#############################################################################]
+    14. wuauclt.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        wuauclt.exe
+        MD5:             62bb79160f86cd962f312c68c6239bfd
+        SHA-1:           c2de8148e1a8e8f097e3a40232ddb04efd0a7cc6
+        File Size:       53472 Bytes
+        Command Line:    "C:\WINDOWS\system32\wuauclt.exe" /RunStoreAsComServer Local\[2a8]SUSDSf0c7666bfc54a04ca39ec51a6dc8d2fd
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\ShimEng.dll ],
+               Base Address: [0x5CB70000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\AppPatch\AcGenral.DLL ],
+               Base Address: [0x6F880000 ], Size: [0x001CA000 ]
+        Module Name: [ C:\WINDOWS\system32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\system32\MSACM32.dll ],
+               Base Address: [0x77BE0000 ], Size: [0x00015000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\system32\UxTheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\wuaueng.dll ],
+               Base Address: [0x50040000 ], Size: [0x001D9000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\ESENT.dll ],
+               Base Address: [0x606B0000 ], Size: [0x0010D000 ]
+        Module Name: [ C:\WINDOWS\system32\WTSAPI32.dll ],
+               Base Address: [0x76F50000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WINSTA.dll ],
+               Base Address: [0x76360000 ], Size: [0x00010000 ]
+        Module Name: [ C:\WINDOWS\system32\NETAPI32.dll ],
+               Base Address: [0x5B860000 ], Size: [0x00055000 ]
+        Module Name: [ C:\WINDOWS\system32\WINSPOOL.DRV ],
+               Base Address: [0x73000000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\system32\IPHLPAPI.DLL ],
+               Base Address: [0x76D60000 ], Size: [0x00019000 ]
+        Module Name: [ C:\WINDOWS\system32\WINHTTP.dll ],
+               Base Address: [0x4D4F0000 ], Size: [0x00059000 ]
+        Module Name: [ C:\WINDOWS\system32\WINTRUST.dll ],
+               Base Address: [0x76C30000 ], Size: [0x0002E000 ]
+        Module Name: [ C:\WINDOWS\system32\CRYPT32.dll ],
+               Base Address: [0x77A80000 ], Size: [0x00095000 ]
+        Module Name: [ C:\WINDOWS\system32\MSASN1.dll ],
+               Base Address: [0x77B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\IMAGEHLP.dll ],
+               Base Address: [0x76C90000 ], Size: [0x00028000 ]
+        Module Name: [ C:\WINDOWS\system32\Cabinet.dll ],
+               Base Address: [0x75150000 ], Size: [0x00013000 ]
+        Module Name: [ C:\WINDOWS\system32\mspatcha.dll ],
+               Base Address: [0x600A0000 ], Size: [0x0000B000 ]
+        Module Name: [ C:\WINDOWS\system32\xpsp2res.dll ],
+               Base Address: [0x00B30000 ], Size: [0x002C5000 ]
+        Module Name: [ C:\WINDOWS\system32\CLBCATQ.DLL ],
+               Base Address: [0x76FD0000 ], Size: [0x0007F000 ]
+        Module Name: [ C:\WINDOWS\system32\COMRes.dll ],
+               Base Address: [0x77050000 ], Size: [0x000C5000 ]
+        Module Name: [ C:\WINDOWS\system32\wups2.dll ],
+               Base Address: [0x50F00000 ], Size: [0x0000D000 ]
+
+
+[#############################################################################]
+    15. ctfmon.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        ctfmon.exe
+        MD5:             5f1d5f88303d4a4dbc8e5f97ba967cc3
+        SHA-1:           99cb7370f16773c8e2d0c86fe805ec638ab126e9
+        File Size:       15360 Bytes
+        Command Line:    "C:\WINDOWS\system32\ctfmon.exe" 
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\MSCTF.dll ],
+               Base Address: [0x74720000 ], Size: [0x0004C000 ]
+        Module Name: [ C:\WINDOWS\system32\MSUTB.dll ],
+               Base Address: [0x5FC10000 ], Size: [0x00033000 ]
+        Module Name: [ C:\WINDOWS\system32\ShimEng.dll ],
+               Base Address: [0x5CB70000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\AppPatch\AcGenral.DLL ],
+               Base Address: [0x6F880000 ], Size: [0x001CA000 ]
+        Module Name: [ C:\WINDOWS\system32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\system32\MSACM32.dll ],
+               Base Address: [0x77BE0000 ], Size: [0x00015000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\system32\UxTheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+
+[=============================================================================]
+    15.a) ctfmon.exe - Registry Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Monitored Registry Keys:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Run ], 
+             Watch subtree: [ 1 ], Notify Filter: [ Key Change,Value Change ], 1 time
+
+
+
+[#############################################################################]
+    16. msmsgs.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        msmsgs.exe
+        MD5:             3e930c641079443d4de036167a69caa2
+        SHA-1:           ac40479e28fb680aff76e41fa14ebe18b3392629
+        File Size:       1695232 Bytes
+        Command Line:    "C:\Program Files\Messenger\msmsgs.exe" /background
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\WSOCK32.dll ],
+               Base Address: [0x71AD0000 ], Size: [0x00009000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\X86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\COMCTL32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\comdlg32.dll ],
+               Base Address: [0x763B0000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.GdiPlus_6595b64144ccf1df_1.0.2600.5512_x-ww_dfb54e0c\gdiplus.dll ],
+               Base Address: [0x4EC50000 ], Size: [0x001A6000 ]
+        Module Name: [ C:\WINDOWS\system32\MSIMG32.dll ],
+               Base Address: [0x76380000 ], Size: [0x00005000 ]
+        Module Name: [ C:\WINDOWS\system32\NETAPI32.dll ],
+               Base Address: [0x5B860000 ], Size: [0x00055000 ]
+        Module Name: [ C:\WINDOWS\system32\WININET.dll ],
+               Base Address: [0x771B0000 ], Size: [0x000AA000 ]
+        Module Name: [ C:\WINDOWS\system32\CRYPT32.dll ],
+               Base Address: [0x77A80000 ], Size: [0x00095000 ]
+        Module Name: [ C:\WINDOWS\system32\MSASN1.dll ],
+               Base Address: [0x77B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\cryptdll.dll ],
+               Base Address: [0x76790000 ], Size: [0x0000C000 ]
+        Module Name: [ C:\WINDOWS\system32\iphlpapi.dll ],
+               Base Address: [0x76D60000 ], Size: [0x00019000 ]
+        Module Name: [ C:\WINDOWS\system32\XPOB2RES.DLL ],
+               Base Address: [0x10000000 ], Size: [0x0006C000 ]
+        Module Name: [ C:\WINDOWS\system32\CLBCATQ.DLL ],
+               Base Address: [0x76FD0000 ], Size: [0x0007F000 ]
+        Module Name: [ C:\WINDOWS\system32\COMRes.dll ],
+               Base Address: [0x77050000 ], Size: [0x000C5000 ]
+        Module Name: [ C:\WINDOWS\system32\xpsp2res.dll ],
+               Base Address: [0x00890000 ], Size: [0x002C5000 ]
+        Module Name: [ C:\WINDOWS\system32\MSCTF.dll ],
+               Base Address: [0x74720000 ], Size: [0x0004C000 ]
+        Module Name: [ C:\WINDOWS\system32\SXS.DLL ],
+               Base Address: [0x7E720000 ], Size: [0x000B0000 ]
+        Module Name: [ C:\WINDOWS\system32\es.dll ],
+               Base Address: [0x77710000 ], Size: [0x00042000 ]
+        Module Name: [ C:\WINDOWS\system32\wtsapi32.dll ],
+               Base Address: [0x76F50000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WINSTA.dll ],
+               Base Address: [0x76360000 ], Size: [0x00010000 ]
+        Module Name: [ C:\WINDOWS\system32\credui.dll ],
+               Base Address: [0x76C00000 ], Size: [0x0002E000 ]
+
+
+[#############################################################################]
+    17. reader_sl.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        reader_sl.exe
+        MD5:             54c88bfbd055621e2306534f445c0c8d
+        SHA-1:           960a171e826c077187fe634103874644327a6110
+        File Size:       40048 Bytes
+        Command Line:    "C:\Program Files\Adobe\Reader 8.0\Reader\reader_sl.exe" 
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.1433_x-ww_5cf844d2\MSVCP80.dll ],
+               Base Address: [0x7C420000 ], Size: [0x00087000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.1433_x-ww_5cf844d2\MSVCR80.dll ],
+               Base Address: [0x78130000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\comctl32.dll ],
+               Base Address: [0x5D090000 ], Size: [0x0009A000 ]
+        Module Name: [ C:\WINDOWS\system32\MSCTF.dll ],
+               Base Address: [0x74720000 ], Size: [0x0004C000 ]
+
+
+[#############################################################################]
+    18. alg.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        alg.exe
+        MD5:             8c515081584a38aa007909cd02020b3d
+        SHA-1:           ef5728c819f466bfe56c36bc9db3fac004ef3d50
+        File Size:       44544 Bytes
+        Command Line:    C:\WINDOWS\System32\alg.exe
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\System32\ATL.DLL ],
+               Base Address: [0x76B20000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\System32\WSOCK32.dll ],
+               Base Address: [0x71AD0000 ], Size: [0x00009000 ]
+        Module Name: [ C:\WINDOWS\System32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\System32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\System32\MSWSOCK.DLL ],
+               Base Address: [0x71A50000 ], Size: [0x0003F000 ]
+        Module Name: [ C:\WINDOWS\System32\ShimEng.dll ],
+               Base Address: [0x5CB70000 ], Size: [0x00026000 ]
+        Module Name: [ C:\WINDOWS\AppPatch\AcGenral.DLL ],
+               Base Address: [0x6F880000 ], Size: [0x001CA000 ]
+        Module Name: [ C:\WINDOWS\System32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\System32\MSACM32.dll ],
+               Base Address: [0x77BE0000 ], Size: [0x00015000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\USERENV.dll ],
+               Base Address: [0x769C0000 ], Size: [0x000B4000 ]
+        Module Name: [ C:\WINDOWS\System32\UxTheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\comctl32.dll ],
+               Base Address: [0x5D090000 ], Size: [0x0009A000 ]
+        Module Name: [ C:\WINDOWS\System32\CLBCATQ.DLL ],
+               Base Address: [0x76FD0000 ], Size: [0x0007F000 ]
+        Module Name: [ C:\WINDOWS\System32\COMRes.dll ],
+               Base Address: [0x77050000 ], Size: [0x000C5000 ]
+        Module Name: [ C:\WINDOWS\System32\xpsp2res.dll ],
+               Base Address: [0x00600000 ], Size: [0x002C5000 ]
+        Module Name: [ C:\WINDOWS\system32\hnetcfg.dll ],
+               Base Address: [0x662B0000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\System32\wshtcpip.dll ],
+               Base Address: [0x71A90000 ], Size: [0x00008000 ]
+
+
+[#############################################################################]
+    19. wscntfy.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        wscntfy.exe
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+
+
+[#############################################################################]
+    20. drlwszvxbeo.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        drlwszvxbeo.exe
+        MD5:             ec95a4d3adc866c53bfafc3ba177d905
+        SHA-1:           78d7358cebb7681ba22b1ec453eb98308eadd619
+        File Size:       1256684 Bytes
+        Command Line:    "C:\Program Files\Common Files\drlwszvxbeo.exe"
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.DLL ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\PSAPI.DLL ],
+               Base Address: [0x76BF0000 ], Size: [0x0000B000 ]
+
+[=============================================================================]
+    Program output
+[=============================================================================]
+        Stdout:
+.......
+
+
+[#############################################################################]
+    21. kxuckd.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: file.exe wrote to the virtual memory of this process
+        Filename:        kxuckd.exe
+        MD5:             ed22e108cca63fab4ad592f04b117289
+        SHA-1:           a11b96e200594f19b8e67af04797b61267710fec
+        File Size:       327901 Bytes
+        Command Line:    "C:\Program Files\Common Files\kxuckd.exe"
+        Process-status
+        at analysis end: alive
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\COMCTL32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\comdlg32.dll ],
+               Base Address: [0x763B0000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+        Module Name: [ C:\WINDOWS\system32\MPR.dll ],
+               Base Address: [0x71B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\system32\VERSION.dll ],
+               Base Address: [0x77C00000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WINMM.dll ],
+               Base Address: [0x76B40000 ], Size: [0x0002D000 ]
+        Module Name: [ C:\WINDOWS\system32\WSOCK32.dll ],
+               Base Address: [0x71AD0000 ], Size: [0x00009000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\uxtheme.dll ],
+               Base Address: [0x5AD70000 ], Size: [0x00038000 ]
+        Module Name: [ C:\WINDOWS\system32\SETUPAPI.dll ],
+               Base Address: [0x77920000 ], Size: [0x000F3000 ]
+        Module Name: [ C:\WINDOWS\system32\MSCTF.dll ],
+               Base Address: [0x74720000 ], Size: [0x0004C000 ]
+
+[=============================================================================]
+    SigBuster Output
+[=============================================================================]
+        UPX All_Versions SN:1634
+
+
+[#############################################################################]
+    22. cleansweep.exe
+[#############################################################################]
+[=============================================================================]
+    General information about this executable
+[=============================================================================]
+        Analysis Reason: Started by file.exe
+        Filename:        cleansweep.exe
+        MD5:             0f37839f48f7fc77e6d50e14657fb96e
+        SHA-1:           35698c61ad232ff90c5812372d23971118ea37cd
+        File Size:       82432 Bytes
+        Command Line:    "C:\cleansweep.exe\cleansweep.exe"
+        Process-status
+        at analysis end: dead
+        Exit Code:       0
+
+[=============================================================================]
+    Load-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\ntdll.dll ],
+               Base Address: [0x7C900000 ], Size: [0x000AF000 ]
+        Module Name: [ C:\WINDOWS\system32\kernel32.dll ],
+               Base Address: [0x7C800000 ], Size: [0x000F6000 ]
+        Module Name: [ C:\WINDOWS\system32\GDI32.dll ],
+               Base Address: [0x77F10000 ], Size: [0x00049000 ]
+        Module Name: [ C:\WINDOWS\system32\USER32.dll ],
+               Base Address: [0x7E410000 ], Size: [0x00091000 ]
+
+[=============================================================================]
+    Run-time Dlls
+[=============================================================================]
+        Module Name: [ C:\WINDOWS\system32\comctl32.dll ],
+               Base Address: [0x5D090000 ], Size: [0x0009A000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2HELP.dll ],
+               Base Address: [0x71AA0000 ], Size: [0x00008000 ]
+        Module Name: [ C:\WINDOWS\system32\WS2_32.dll ],
+               Base Address: [0x71AB0000 ], Size: [0x00017000 ]
+        Module Name: [ C:\WINDOWS\system32\OLEAUT32.dll ],
+               Base Address: [0x77120000 ], Size: [0x0008B000 ]
+        Module Name: [ C:\WINDOWS\system32\WININET.dll ],
+               Base Address: [0x771B0000 ], Size: [0x000AA000 ]
+        Module Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ],
+               Base Address: [0x773D0000 ], Size: [0x00103000 ]
+        Module Name: [ C:\WINDOWS\system32\ole32.dll ],
+               Base Address: [0x774E0000 ], Size: [0x0013D000 ]
+        Module Name: [ C:\WINDOWS\system32\CRYPT32.dll ],
+               Base Address: [0x77A80000 ], Size: [0x00095000 ]
+        Module Name: [ C:\WINDOWS\system32\MSASN1.dll ],
+               Base Address: [0x77B20000 ], Size: [0x00012000 ]
+        Module Name: [ C:\WINDOWS\system32\msvcrt.dll ],
+               Base Address: [0x77C10000 ], Size: [0x00058000 ]
+        Module Name: [ C:\WINDOWS\system32\ADVAPI32.dll ],
+               Base Address: [0x77DD0000 ], Size: [0x0009B000 ]
+        Module Name: [ C:\WINDOWS\system32\RPCRT4.dll ],
+               Base Address: [0x77E70000 ], Size: [0x00092000 ]
+        Module Name: [ C:\WINDOWS\system32\SHLWAPI.dll ],
+               Base Address: [0x77F60000 ], Size: [0x00076000 ]
+        Module Name: [ C:\WINDOWS\system32\Secur32.dll ],
+               Base Address: [0x77FE0000 ], Size: [0x00011000 ]
+        Module Name: [ C:\WINDOWS\system32\SHELL32.dll ],
+               Base Address: [0x7C9C0000 ], Size: [0x00817000 ]
+
+[=============================================================================]
+    Ikarus Virus Scanner
+[=============================================================================]
+        Trojan-Spy.Win32.SpyEyes (Sig-Id: 1342409)
+
+[=============================================================================]
+    22.a) cleansweep.exe - Registry Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Registry Values Modified:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Key: [ HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths ], 
+             Value Name: [ Directory ], New Value: [ C:\Documents and Settings\Administrator\Local Settings\Temporary Internet Files\Content.IE5 ]
+        Key: [ HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths ], 
+             Value Name: [ Paths ], New Value: [ 4 ]
+        Key: [ HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path1 ], 
+             Value Name: [ CacheLimit ], New Value: [ 40852 ]
+        Key: [ HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path1 ], 
+             Value Name: [ CachePath ], New Value: [ C:\Documents and Settings\Administrator\Local Settings\Temporary Internet Files\Content.IE5\Cache1 ]
+        Key: [ HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path2 ], 
+             Value Name: [ CacheLimit ], New Value: [ 40852 ]
+        Key: [ HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path2 ], 
+             Value Name: [ CachePath ], New Value: [ C:\Documents and Settings\Administrator\Local Settings\Temporary Internet Files\Content.IE5\Cache2 ]
+        Key: [ HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path3 ], 
+             Value Name: [ CacheLimit ], New Value: [ 40852 ]
+        Key: [ HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path3 ], 
+             Value Name: [ CachePath ], New Value: [ C:\Documents and Settings\Administrator\Local Settings\Temporary Internet Files\Content.IE5\Cache3 ]
+        Key: [ HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path4 ], 
+             Value Name: [ CacheLimit ], New Value: [ 40852 ]
+        Key: [ HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path4 ], 
+             Value Name: [ CachePath ], New Value: [ C:\Documents and Settings\Administrator\Local Settings\Temporary Internet Files\Content.IE5\Cache4 ]
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders ], 
+             Value Name: [ AppData ], New Value: [ C:\Documents and Settings\Administrator\Application Data ]
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders ], 
+             Value Name: [ Cache ], New Value: [ C:\Documents and Settings\Administrator\Local Settings\Temporary Internet Files ]
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders ], 
+             Value Name: [ Cookies ], New Value: [ C:\Documents and Settings\Administrator\Cookies ]
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders ], 
+             Value Name: [ History ], New Value: [ C:\Documents and Settings\Administrator\Local Settings\History ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Registry Values Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Key: [ HKLM\SYSTEM\CurrentControlSet\Control\Session Manager ], 
+             Value Name: [ CriticalSectionTimeout ], Value: [ 2592000 ], 1 time
+        Key: [ HKLM\SYSTEM\Setup ], 
+             Value Name: [ SystemSetupInProgress ], Value: [ 0 ], 1 time
+        Key: [ HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers ], 
+             Value Name: [ TransparentEnabled ], Value: [ 1 ], 1 time
+        Key: [ HKLM\System\CurrentControlSet\Control\Terminal Server ], 
+             Value Name: [ TSUserEnabled ], Value: [ 0 ], 1 time
+        Key: [ HKLM\System\Setup ], 
+             Value Name: [ SystemSetupInProgress ], Value: [ 0 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders ], 
+             Value Name: [ AppData ], Value: [ %USERPROFILE%\Application Data ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders ], 
+             Value Name: [ Cache ], Value: [ %USERPROFILE%\Local Settings\Temporary Internet Files ], 3 times
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders ], 
+             Value Name: [ Cookies ], Value: [ %USERPROFILE%\Cookies ], 3 times
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders ], 
+             Value Name: [ History ], Value: [ %USERPROFILE%\Local Settings\History ], 3 times
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache ], 
+             Value Name: [ Signature ], Value: [ Client UrlCache MMF Ver 5.2 ], 2 times
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Content ], 
+             Value Name: [ CacheLimit ], Value: [ 163410 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Content ], 
+             Value Name: [ CachePrefix ], Value: [  ], 2 times
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Content ], 
+             Value Name: [ PerUserItem ], Value: [ 1 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Cookies ], 
+             Value Name: [ CacheLimit ], Value: [ 8192 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Cookies ], 
+             Value Name: [ CachePrefix ], Value: [ Cookie: ], 2 times
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Cookies ], 
+             Value Name: [ PerUserItem ], Value: [ 1 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012011021720110218 ], 
+             Value Name: [ CacheLimit ], Value: [ 8192 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012011021720110218 ], 
+             Value Name: [ CacheOptions ], Value: [ 11 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012011021720110218 ], 
+             Value Name: [ CachePath ], Value: [ %USERPROFILE%\Local Settings\History\History.IE5\MSHist012011021720110218\ ], 2 times
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012011021720110218 ], 
+             Value Name: [ CachePrefix ], Value: [ :2011021720110218:  ], 2 times
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012011021720110218 ], 
+             Value Name: [ CacheRepair ], Value: [ 0 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012011021820110219 ], 
+             Value Name: [ CacheLimit ], Value: [ 8192 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012011021820110219 ], 
+             Value Name: [ CacheOptions ], Value: [ 11 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012011021820110219 ], 
+             Value Name: [ CachePath ], Value: [ %USERPROFILE%\Local Settings\History\History.IE5\MSHist012011021820110219\ ], 2 times
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012011021820110219 ], 
+             Value Name: [ CachePrefix ], Value: [ :2011021820110219:  ], 2 times
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012011021820110219 ], 
+             Value Name: [ CacheRepair ], Value: [ 0 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\History ], 
+             Value Name: [ CacheLimit ], Value: [ 8192 ], 1 time
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\History ], 
+             Value Name: [ CachePrefix ], Value: [ Visited: ], 2 times
+        Key: [ HKU\S-1-5-21-842925246-1425521274-308236825-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\History ], 
+             Value Name: [ PerUserItem ], Value: [ 1 ], 1 time
+
+
+[=============================================================================]
+    22.b) cleansweep.exe - File Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Deleted:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ C:\Documents and Settings\Administrator\Application Data\Mozilla\Firefox\Profiles\a3n0yopb.default\cookies.sqlite ]
+        File Name: [ C:\Documents and Settings\Administrator\Application Data\Mozilla\Firefox\Profiles\a3n0yopb.default\cookies.sqlite-journal ]
+        File Name: [ C:\Documents and Settings\Administrator\Cookies\administrator@adobe[1].txt ]
+        File Name: [ C:\Documents and Settings\Administrator\Cookies\administrator@google[1].txt ]
+        File Name: [ C:\Documents and Settings\Administrator\Cookies\administrator@java[1].txt ]
+        File Name: [ C:\Documents and Settings\Administrator\Cookies\administrator@promotion.adobe[1].txt ]
+        File Name: [ C:\Documents and Settings\Administrator\Cookies\administrator@sun[1].txt ]
+        File Name: [ C:\Documents and Settings\Administrator\Cookies\administrator@walkernews[1].txt ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Files Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ C:\Documents and Settings\Administrator\Application Data\Mozilla\Firefox\profiles.ini ]
+        File Name: [ C:\cleansweep.exe\config.bin ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    File System Control Communication:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File: [ C:\Program Files\Common Files\ ], Control Code: [ 0x00090028 ], 1 time
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Device Control Communication:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File: [ \Device\KsecDD ], Control Code: [ 0x00390008 ], 1 time
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Memory Mapped Files:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        File Name: [ C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83\comctl32.dll ]
+        File Name: [ C:\WINDOWS\WindowsShell.Manifest ]
+        File Name: [ C:\WINDOWS\system32\SHELL32.dll ]
+        File Name: [ C:\WINDOWS\system32\WININET.dll ]
+        File Name: [ C:\WINDOWS\system32\WS2HELP.dll ]
+        File Name: [ C:\WINDOWS\system32\WS2_32.dll ]
+        File Name: [ C:\WINDOWS\system32\comctl32.dll ]
+        File Name: [ \systemroot\system32\kernel32.dll ]
+        File Name: [ \systemroot\system32\msvcrt.dll ]
+        File Name: [ \systemroot\system32\ntdll.dll ]
+        File Name: [ \systemroot\system32\user32.dll ]
+
+[=============================================================================]
+    22.c) cleansweep.exe - Process Activities
+[=============================================================================]
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Remote Threads Created:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Affected Process: [ C:\WINDOWS\explorer.exe ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Foreign Memory Regions Read:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Process: [ C:\WINDOWS\explorer.exe ]
+
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+    Foreign Memory Regions Written:
+[=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=]
+        Process: [ C:\WINDOWS\explorer.exe ]
+
+
+
+
+[#############################################################################]
+                       International Secure Systems Lab                        
+                            http://www.iseclab.org                             
+
+Vienna University of Technology     Eurecom France            UC Santa Barbara
+http://www.tuwien.ac.at          http://www.eurecom.fr  http://www.cs.ucsb.edu
+
+                          Contact: anubis@iseclab.org                          
